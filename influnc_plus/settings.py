@@ -63,7 +63,7 @@ ROBOTSTXT_OBEY = True
 # Configure item pipelines
 # See https://docs.scrapy.org/en/latest/topics/item-pipeline.html
 ITEM_PIPELINES = {
-   # 'influnc_plus.pipelines.FilterPipeline': 200,
+   'influnc_plus.pipelines.FilterPipeline': 200,
    'influnc_plus.pipelines.StripBlankPipeline': 300,
    'influnc_plus.pipelines.SaveToDatabasePipeline': 400,
 }
