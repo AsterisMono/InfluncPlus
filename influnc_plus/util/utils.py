@@ -1,10 +1,15 @@
+import logging
 import re
 
 rex = re.compile(r'\W+')
 
 
 def str_collapse(string: str) -> str:
-    return rex.sub(' ', string).strip()
+    try:
+        return rex.sub(' ', string).strip()
+    except TypeError:
+        logging.getLogger().error("[正则] 处理{}时出错".format(string))
+        return string
 
 
 if __name__ == '__main__':
