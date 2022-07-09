@@ -8,8 +8,11 @@ def str_collapse(string: str) -> str:
     try:
         return rex.sub(' ', string).strip()
     except TypeError:
-        logging.getLogger().error("[正则] 处理{}时出错".format(string))
-        return string
+        logging.getLogger("info-console").error("[正则] 处理{}时出错".format(string))
+        if string is None:
+            return ''
+        else:
+            return string
 
 
 if __name__ == '__main__':

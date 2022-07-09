@@ -6,6 +6,7 @@ import scrapy
 from scrapy.linkextractors import LinkExtractor
 
 from influnc_plus.db.models import Blog
+from influnc_plus.filter.keyword_tester import get_tester
 from influnc_plus.items import BlogLinkItem
 from influnc_plus.util.utils import str_collapse
 
@@ -76,6 +77,7 @@ class BlogsSpider(scrapy.Spider):
 
         # now add new handler to logger
         self.console_logger.addHandler(console_handle)
+        self.tester = get_tester()
         super().__init__(**kwargs)
 
     def start_requests(self):
@@ -114,6 +116,15 @@ class BlogsSpider(scrapy.Spider):
         m_title = self.get_page_title(response)
         src_blog.title = m_title[0]
         src_blog.save()
+
+        # Test page title now
+        flag, keyword = self.tester.test(src_blog.title)
+        if flag:
+            self.console_logger.info("[{}] 发现关键词: ----> [{}] <----, 条目已在[抓取后]丢弃".format(src_blog.title, keyword))
+            src_blog.status = "dropped"
+            src_blog.save()
+            return
+
         self.console_logger.info("[{}] 正在进入: {}, 标题来源: {}".format(src_blog.title, src_blog.domain, m_title[1]))
         insite_link_extractor = LinkExtractor(allow_domains=[urlparse(response.url).netloc], unique=True)
         has_friend_page = False

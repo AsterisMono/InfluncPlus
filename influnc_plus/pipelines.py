@@ -10,7 +10,7 @@ from datetime import datetime
 from scrapy.exceptions import DropItem
 
 from influnc_plus.db.models import Blog, Link
-from influnc_plus.filter.keyword_tester import Tester
+from influnc_plus.filter.keyword_tester import get_tester
 from influnc_plus.util.utils import str_collapse
 
 
@@ -23,15 +23,12 @@ class StripBlankPipeline:
 
 class FilterPipeline:
     def __init__(self):
-        self.tester = Tester()
+        self.tester = get_tester()
 
     def process_item(self, item, spider):
-        if_updated = self.tester.update()
-        if if_updated:
-            spider.console_logger.info("[过滤器] 过滤器黑名单已经改变，正在更新...")
         flag, keyword = self.tester.test(item["title"])
         if flag:
-            spider.console_logger.info("[{}] 发现关键词: ----> [{}] <----, 条目已丢弃".format(item["title"], keyword))
+            spider.console_logger.info("[{}] 发现关键词: ----> [{}] <----, 条目已在[抓取前]丢弃".format(item["title"], keyword))
             raise DropItem("[{}] 发现关键词:{}, 条目已丢弃".format(item["title"], keyword))
         return item
 

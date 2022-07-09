@@ -1,3 +1,4 @@
+import logging
 import os
 
 import ahocorasick
@@ -25,6 +26,7 @@ class Tester:
     def __init__(self):
         self.ac = generate_automaton()
         self._cached_stamp = os.stat(keyword_file_name).st_mtime
+        self.logger = logging.getLogger('info-console')
 
     def update(self) -> bool:
         stamp = os.stat(keyword_file_name).st_mtime
@@ -36,9 +38,19 @@ class Tester:
         return False
 
     def test(self, haystack: str) -> (bool, str):
+        if_updated = self.update()
+        if if_updated:
+            self.logger.info("[过滤器] 过滤器黑名单已经改变，正在更新...")
         for item in self.ac.iter(haystack):
             return True, item[1]
         return False, ''
+
+
+tester = Tester()
+
+
+def get_tester():
+    return tester
 
 
 if __name__ == '__main__':
