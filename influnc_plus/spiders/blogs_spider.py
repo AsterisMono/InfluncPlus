@@ -1,3 +1,4 @@
+from datetime import datetime
 from urllib.parse import urlparse
 
 import scrapy
@@ -74,6 +75,7 @@ class BlogsSpider(scrapy.Spider):
     def error_handling(self, failure):
         src_blog = failure.request.cb_kwargs['src']
         src_blog.status = "offline"
+        src_blog.last_access_time = datetime.now()
         src_blog.save()
 
     def parse_blog(self, response, **kwargs):
@@ -91,6 +93,7 @@ class BlogsSpider(scrapy.Spider):
             src_blog.status = "online-links"
         else:
             src_blog.status = "online-no-links"
+        src_blog.last_access_time = datetime.now()
         src_blog.save()
 
     def parse_friend_page(self, response, **kwargs):
