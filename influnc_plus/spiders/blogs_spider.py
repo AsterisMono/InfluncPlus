@@ -33,6 +33,11 @@ def if_link_points_to_friend_page(link) -> bool:
     else:
         return False
 
+def get_unaccessed_blog():
+    return Blog.get(Blog.status=="unknown")
+
+def has_unaccessed_blog():
+    return len(Blog.select().where(Blog.status=="unknown")) > 0
 
 class BlogsSpider(scrapy.Spider):
     name = "blogs"
@@ -46,11 +51,17 @@ class BlogsSpider(scrapy.Spider):
     ]
 
     def start_requests(self):
-        unscraped_blogs = Blog.select().where(Blog.status == "unknown").iterator()
-        for item in unscraped_blogs:
-            url = "https://" + item.domain
-            self.log("URL: " + url, logging.DEBUG)
-            yield scrapy.Request(url, callback=self.parse_blog, errback=self.error_handling, cb_kwargs={'src': item})
+        # unscraped_blogs = Blog.select().where(Blog.status == "unknown").iterator()
+        # for item in unscraped_blogs:
+        #     url = "https://" + item.domain
+        #     self.log("URL: " + url, logging.DEBUG)
+        #     yield scrapy.Request(url, callback=self.parse_blog, errback=self.error_handling, cb_kwargs={'src': item})
+        while has_unaccessed_blog():
+            blog = get_unaccessed_blog()
+            blog.status="pending"
+            blog.save()
+            url = "https://" + blog.domain
+            yield scrapy.Request(url, callback=self.parse_blog, errback=self.error_handling, cb_kwargs={'src':blog})
 
     def error_handling(self, failure):
         src_blog = failure.request.cb_kwargs['src']

@@ -48,10 +48,10 @@ class SaveToDatabasePipeline:
             blog.last_access_time = datetime.now()
             blog.save()
         link = Link.get_or_create(src_blog=item["src_blog"], dst_blog=blog)
-        crawler: scrapy.crawler.Crawler = self.crawler
-        crawler.engine.crawl(Request(
-            url="https://" + item["url"].netloc,
-            callback=spider.parse_blog,
-            errback=spider.error_handling, cb_kwargs={'src': blog}
-        ), spider)
+        # crawler: scrapy.crawler.Crawler = self.crawler
+        # crawler.engine.crawl(Request(
+        #     url="https://" + item["url"].netloc,
+        #     callback=spider.parse_blog,
+        #     errback=spider.error_handling, cb_kwargs={'src': blog}
+        # ), spider)
         return item
