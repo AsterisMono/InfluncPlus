@@ -6,6 +6,7 @@ from scrapy.linkextractors import LinkExtractor
 
 from influnc_plus.db.models import Blog
 from influnc_plus.items import BlogLinkItem
+from influnc_plus.util.utils import str_collapse
 
 
 def if_path_contains_keyword(path, keywords: list[str]) -> bool:
@@ -80,14 +81,14 @@ class BlogsSpider(scrapy.Spider):
 
     def parse_blog(self, response, **kwargs):
         src_blog = kwargs['src']
-        self.logger.info("[{}] 正在进入: {}".format(src_blog.title, src_blog.domain))
+        self.logger.info("[{}] 正在进入: {}".format(str_collapse(src_blog.title), src_blog.domain))
         src_blog.title = response.css('title::text').get()
         src_blog.save()
         insite_link_extractor = LinkExtractor(allow_domains=[urlparse(response.url).netloc], unique=True)
         has_friend_page = False
         for link in insite_link_extractor.extract_links(response):
             if if_link_points_to_friend_page(link):
-                self.logger.info("[{}] 发现了疑似友链页面:{}".format(src_blog.title, link.url))
+                self.logger.info("[{}] 发现了疑似友链页面:{}".format(str_collapse(src_blog.title), link.url))
                 has_friend_page = True
                 url = response.urljoin(link.url)
                 yield scrapy.Request(url, callback=self.parse_friend_page, cb_kwargs={'src': src_blog})
@@ -101,7 +102,7 @@ class BlogsSpider(scrapy.Spider):
     def parse_friend_page(self, response, **kwargs):
         src_blog = kwargs['src']
         title = response.css('title::text').get()
-        self.logger.info("[{}] 正在解析友链页面".format(title.strip().replace("\n", "")))
+        self.logger.info("[{}] 正在解析友链页面".format(str_collapse(title)))
         ext_link_extractor = LinkExtractor(deny_domains=self.denied_domains + [urlparse(response.url).netloc]
                                            , unique=True)
         for link in ext_link_extractor.extract_links(response):

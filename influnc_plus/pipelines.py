@@ -10,24 +10,28 @@ from datetime import datetime
 from scrapy.exceptions import DropItem
 
 from influnc_plus.db.models import Blog, Link
-
-
-class FilterPipeline:
-    keyword_blacklist = ["河北", "山西", "辽宁", "吉林", "黑龙江", "江苏", "浙江", "安徽", "福建", "江西", "山东",
-                         "河南", "湖北", "湖南", "广东", "海南", "四川", "贵州", "云南", "陕西", "甘肃", "青海",
-                         "台湾", "人才", "化学", "信息网", "化工", "查询"]
-
-    def process_item(self, item, spider):
-        for keyword in self.keyword_blacklist:
-            if keyword in item["title"]:
-                raise DropItem("[{}] 发现关键词:{}, 条目已丢弃".format(item["title"], keyword))
-        return item
+from influnc_plus.filter.keyword_tester import Tester
+from influnc_plus.util.utils import str_collapse
 
 
 class StripBlankPipeline:
     def process_item(self, item, spider):
         # item.url: UrlParseResult, item.title: str, item.src_blog: Blog
-        item["title"] = item["title"].strip().replace("\n", "")
+        item["title"] = str_collapse(item["title"])
+        return item
+
+
+class FilterPipeline:
+    def __init__(self):
+        self.tester = Tester()
+
+    def process_item(self, item, spider):
+        if_updated = self.tester.update()
+        if if_updated:
+            spider.logger.info("[过滤器] 过滤器黑名单已经改变，正在更新...")
+        flag, keyword = self.tester.test(item["title"])
+        if flag:
+            raise DropItem("[{}] 发现关键词:{}, 条目已丢弃".format(item["title"], keyword))
         return item
 
 
