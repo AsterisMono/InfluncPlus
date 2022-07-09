@@ -1,7 +1,6 @@
-from urllib import parse
+import datetime
 
 from peewee import *
-import datetime
 
 db = SqliteDatabase('influnc_plus/db/database.db')
 

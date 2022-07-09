@@ -7,9 +7,6 @@
 # useful for handling different item types with a single interface
 from datetime import datetime
 
-import scrapy.crawler
-from itemadapter import ItemAdapter
-from scrapy import Request
 from scrapy.exceptions import DropItem
 
 from influnc_plus.db.models import Blog, Link

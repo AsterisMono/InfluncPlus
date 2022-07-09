@@ -1,4 +1,3 @@
-import logging
 from urllib.parse import urlparse
 
 import scrapy
