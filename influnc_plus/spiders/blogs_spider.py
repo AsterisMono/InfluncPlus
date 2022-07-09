@@ -1,3 +1,4 @@
+import logging
 from datetime import datetime
 from urllib.parse import urlparse
 
@@ -59,6 +60,24 @@ class BlogsSpider(scrapy.Spider):
         'bilibili.com'
     ]
 
+    def __init__(self, **kwargs):
+        self.console_logger = logging.getLogger("info-console")
+        self.console_logger.setLevel(logging.INFO)
+        # remove all default handlers
+        for handler in self.console_logger.handlers:
+            self.console_logger.removeHandler(handler)
+        # create console handler and set level to info
+        console_handle = logging.StreamHandler()
+        console_handle.setLevel(logging.INFO)
+
+        # create formatter
+        formatter = logging.Formatter("%(asctime)s | %(message)s", datefmt="%Y/%m/%d %I:%M:%S")
+        console_handle.setFormatter(formatter)
+
+        # now add new handler to logger
+        self.console_logger.addHandler(console_handle)
+        super().__init__(**kwargs)
+
     def start_requests(self):
         # unscraped_blogs = Blog.select().where(Blog.status == "unknown").iterator()
         # for item in unscraped_blogs:
@@ -78,8 +97,9 @@ class BlogsSpider(scrapy.Spider):
         src_blog.status = "offline"
         src_blog.last_access_time = datetime.now()
         src_blog.save()
+        self.console_logger.info("[{}] 不可达，已放弃连接".format(src_blog.title))
 
-    def get_page_title(self, response)-> (str, str):
+    def get_page_title(self, response) -> (str, str):
         # Fallback path: og:site_name -> og:title -> HTML title
         og_site_name = response.xpath('//meta[@property="og:site_name"]/@content')
         if len(og_site_name) == 1:
@@ -94,12 +114,12 @@ class BlogsSpider(scrapy.Spider):
         m_title = self.get_page_title(response)
         src_blog.title = m_title[0]
         src_blog.save()
-        self.logger.info("[{}] 正在进入: {}, 标题来源: {}".format(src_blog.title, src_blog.domain, m_title[1]))
+        self.console_logger.info("[{}] 正在进入: {}, 标题来源: {}".format(src_blog.title, src_blog.domain, m_title[1]))
         insite_link_extractor = LinkExtractor(allow_domains=[urlparse(response.url).netloc], unique=True)
         has_friend_page = False
         for link in insite_link_extractor.extract_links(response):
             if if_link_points_to_friend_page(link):
-                self.logger.info("[{}] 发现了疑似友链页面:{}".format(src_blog.title, link.url))
+                self.console_logger.info("[{}] 发现了疑似友链页面:{}".format(src_blog.title, link.url))
                 has_friend_page = True
                 url = response.urljoin(link.url)
                 yield scrapy.Request(url, callback=self.parse_friend_page, cb_kwargs={'src': src_blog})
@@ -107,12 +127,13 @@ class BlogsSpider(scrapy.Spider):
             src_blog.status = "online-links"
         else:
             src_blog.status = "online-no-links"
+            self.console_logger.info("[{}] 没有找到友链页面".format(src_blog.title))
         src_blog.last_access_time = datetime.now()
         src_blog.save()
 
     def parse_friend_page(self, response, **kwargs):
         src_blog = kwargs['src']
-        self.logger.info("[{}] 正在解析友链页面".format(src_blog.title))
+        self.console_logger.info("[{}] 正在解析友链页面".format(src_blog.title))
         ext_link_extractor = LinkExtractor(deny_domains=self.denied_domains + [urlparse(response.url).netloc]
                                            , unique=True)
         for link in ext_link_extractor.extract_links(response):
