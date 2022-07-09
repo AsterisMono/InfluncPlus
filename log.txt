@@ -1,0 +1,1199 @@
+2022-07-08 23:28:41 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://phower.me/robots.txt> (failed 3 times): 503 Service Unavailable
+2022-07-08 23:28:50 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://www.SHIZUMIGO.com/robots.txt> (failed 3 times): [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:28:50 [scrapy.downloadermiddlewares.robotstxt] ERROR: Error downloading <GET https://www.SHIZUMIGO.com/robots.txt>: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+Traceback (most recent call last):
+  File "C:\Users\Miyuki\PycharmProjects\Influnc+\venv\lib\site-packages\scrapy\core\downloader\middleware.py", line 49, in process_request
+    return (yield download_func(request=request, spider=spider))
+twisted.web._newclient.ResponseNeverReceived: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:28:51 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://bbs.saphead.cn/robots.txt> (failed 3 times): [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:28:51 [scrapy.downloadermiddlewares.robotstxt] ERROR: Error downloading <GET https://bbs.saphead.cn/robots.txt>: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+Traceback (most recent call last):
+  File "C:\Users\Miyuki\PycharmProjects\Influnc+\venv\lib\site-packages\scrapy\core\downloader\middleware.py", line 49, in process_request
+    return (yield download_func(request=request, spider=spider))
+twisted.web._newclient.ResponseNeverReceived: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:28:52 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://taron.top/robots.txt> (failed 3 times): [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:28:52 [scrapy.downloadermiddlewares.robotstxt] ERROR: Error downloading <GET https://taron.top/robots.txt>: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+Traceback (most recent call last):
+  File "C:\Users\Miyuki\PycharmProjects\Influnc+\venv\lib\site-packages\scrapy\core\downloader\middleware.py", line 49, in process_request
+    return (yield download_func(request=request, spider=spider))
+twisted.web._newclient.ResponseNeverReceived: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:28:54 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://www.futureblase.com/robots.txt> (failed 3 times): [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:28:54 [scrapy.downloadermiddlewares.robotstxt] ERROR: Error downloading <GET https://www.futureblase.com/robots.txt>: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+Traceback (most recent call last):
+  File "C:\Users\Miyuki\PycharmProjects\Influnc+\venv\lib\site-packages\scrapy\core\downloader\middleware.py", line 49, in process_request
+    return (yield download_func(request=request, spider=spider))
+twisted.web._newclient.ResponseNeverReceived: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:28:54 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://www.52ecy.cn/robots.txt> (failed 3 times): [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:28:54 [scrapy.downloadermiddlewares.robotstxt] ERROR: Error downloading <GET https://www.52ecy.cn/robots.txt>: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+Traceback (most recent call last):
+  File "C:\Users\Miyuki\PycharmProjects\Influnc+\venv\lib\site-packages\scrapy\core\downloader\middleware.py", line 49, in process_request
+    return (yield download_func(request=request, spider=spider))
+twisted.web._newclient.ResponseNeverReceived: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:29:01 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://48/robots.txt> (failed 3 times): DNS lookup failed: no results for hostname lookup: 48.
+2022-07-08 23:29:01 [scrapy.downloadermiddlewares.robotstxt] ERROR: Error downloading <GET https://48/robots.txt>: DNS lookup failed: no results for hostname lookup: 48.
+Traceback (most recent call last):
+  File "C:\Users\Miyuki\PycharmProjects\Influnc+\venv\lib\site-packages\twisted\internet\defer.py", line 1656, in _inlineCallbacks
+    result = current_context.run(
+  File "C:\Users\Miyuki\PycharmProjects\Influnc+\venv\lib\site-packages\twisted\python\failure.py", line 514, in throwExceptionIntoGenerator
+    return g.throw(self.type, self.value, self.tb)
+  File "C:\Users\Miyuki\PycharmProjects\Influnc+\venv\lib\site-packages\scrapy\core\downloader\middleware.py", line 49, in process_request
+    return (yield download_func(request=request, spider=spider))
+  File "C:\Users\Miyuki\PycharmProjects\Influnc+\venv\lib\site-packages\twisted\internet\defer.py", line 857, in _runCallbacks
+    current.result = callback(  # type: ignore[misc]
+  File "C:\Users\Miyuki\PycharmProjects\Influnc+\venv\lib\site-packages\twisted\internet\endpoints.py", line 1020, in startConnectionAttempts
+    raise error.DNSLookupError(
+twisted.internet.error.DNSLookupError: DNS lookup failed: no results for hostname lookup: 48.
+2022-07-08 23:29:03 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://www.fczbl.vip/robots.txt> (failed 3 times): [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:29:03 [scrapy.downloadermiddlewares.robotstxt] ERROR: Error downloading <GET https://www.fczbl.vip/robots.txt>: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+Traceback (most recent call last):
+  File "C:\Users\Miyuki\PycharmProjects\Influnc+\venv\lib\site-packages\scrapy\core\downloader\middleware.py", line 49, in process_request
+    return (yield download_func(request=request, spider=spider))
+twisted.web._newclient.ResponseNeverReceived: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:29:04 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://devoted2.site/robots.txt> (failed 3 times): [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:29:04 [scrapy.downloadermiddlewares.robotstxt] ERROR: Error downloading <GET https://devoted2.site/robots.txt>: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+Traceback (most recent call last):
+  File "C:\Users\Miyuki\PycharmProjects\Influnc+\venv\lib\site-packages\scrapy\core\downloader\middleware.py", line 49, in process_request
+    return (yield download_func(request=request, spider=spider))
+twisted.web._newclient.ResponseNeverReceived: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:29:04 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://pages.coding.me/robots.txt> (failed 3 times): [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:29:04 [scrapy.downloadermiddlewares.robotstxt] ERROR: Error downloading <GET https://pages.coding.me/robots.txt>: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+Traceback (most recent call last):
+  File "C:\Users\Miyuki\PycharmProjects\Influnc+\venv\lib\site-packages\scrapy\core\downloader\middleware.py", line 49, in process_request
+    return (yield download_func(request=request, spider=spider))
+twisted.web._newclient.ResponseNeverReceived: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:29:08 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://www.slidyy.com/robots.txt> (failed 3 times): [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:29:08 [scrapy.downloadermiddlewares.robotstxt] ERROR: Error downloading <GET https://www.slidyy.com/robots.txt>: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+Traceback (most recent call last):
+  File "C:\Users\Miyuki\PycharmProjects\Influnc+\venv\lib\site-packages\scrapy\core\downloader\middleware.py", line 49, in process_request
+    return (yield download_func(request=request, spider=spider))
+twisted.web._newclient.ResponseNeverReceived: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:29:09 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://www.ercc.cc/robots.txt> (failed 3 times): [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:29:09 [scrapy.downloadermiddlewares.robotstxt] ERROR: Error downloading <GET https://www.ercc.cc/robots.txt>: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+Traceback (most recent call last):
+  File "C:\Users\Miyuki\PycharmProjects\Influnc+\venv\lib\site-packages\scrapy\core\downloader\middleware.py", line 49, in process_request
+    return (yield download_func(request=request, spider=spider))
+twisted.web._newclient.ResponseNeverReceived: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:29:09 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://mp.jiuliusq.net/robots.txt> (failed 3 times): [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:29:09 [scrapy.downloadermiddlewares.robotstxt] ERROR: Error downloading <GET https://mp.jiuliusq.net/robots.txt>: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+Traceback (most recent call last):
+  File "C:\Users\Miyuki\PycharmProjects\Influnc+\venv\lib\site-packages\scrapy\core\downloader\middleware.py", line 49, in process_request
+    return (yield download_func(request=request, spider=spider))
+twisted.web._newclient.ResponseNeverReceived: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:29:12 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://www.qijiu.red/robots.txt> (failed 3 times): [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:29:12 [scrapy.downloadermiddlewares.robotstxt] ERROR: Error downloading <GET https://www.qijiu.red/robots.txt>: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+Traceback (most recent call last):
+  File "C:\Users\Miyuki\PycharmProjects\Influnc+\venv\lib\site-packages\scrapy\core\downloader\middleware.py", line 49, in process_request
+    return (yield download_func(request=request, spider=spider))
+twisted.web._newclient.ResponseNeverReceived: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:29:13 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://nightdye.top/robots.txt> (failed 3 times): [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:29:13 [scrapy.downloadermiddlewares.robotstxt] ERROR: Error downloading <GET https://nightdye.top/robots.txt>: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+Traceback (most recent call last):
+  File "C:\Users\Miyuki\PycharmProjects\Influnc+\venv\lib\site-packages\scrapy\core\downloader\middleware.py", line 49, in process_request
+    return (yield download_func(request=request, spider=spider))
+twisted.web._newclient.ResponseNeverReceived: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:29:14 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://www.todobest.cn/robots.txt> (failed 3 times): [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:29:14 [scrapy.downloadermiddlewares.robotstxt] ERROR: Error downloading <GET https://www.todobest.cn/robots.txt>: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+Traceback (most recent call last):
+  File "C:\Users\Miyuki\PycharmProjects\Influnc+\venv\lib\site-packages\scrapy\core\downloader\middleware.py", line 49, in process_request
+    return (yield download_func(request=request, spider=spider))
+twisted.web._newclient.ResponseNeverReceived: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:29:16 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://blog.xqcoding.com/robots.txt> (failed 3 times): [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:29:16 [scrapy.downloadermiddlewares.robotstxt] ERROR: Error downloading <GET https://blog.xqcoding.com/robots.txt>: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+Traceback (most recent call last):
+  File "C:\Users\Miyuki\PycharmProjects\Influnc+\venv\lib\site-packages\scrapy\core\downloader\middleware.py", line 49, in process_request
+    return (yield download_func(request=request, spider=spider))
+twisted.web._newclient.ResponseNeverReceived: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:29:21 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://pan.leejean.top/robots.txt> (failed 3 times): 502 Bad Gateway
+2022-07-08 23:29:24 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://laodad.com/robots.txt> (failed 3 times): [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:29:24 [scrapy.downloadermiddlewares.robotstxt] ERROR: Error downloading <GET https://laodad.com/robots.txt>: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+Traceback (most recent call last):
+  File "C:\Users\Miyuki\PycharmProjects\Influnc+\venv\lib\site-packages\scrapy\core\downloader\middleware.py", line 49, in process_request
+    return (yield download_func(request=request, spider=spider))
+twisted.web._newclient.ResponseNeverReceived: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:29:25 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://uptime.laoda.de/robots.txt> (failed 3 times): 502 Bad Gateway
+2022-07-08 23:29:28 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://www.lovest.me/robots.txt> (failed 3 times): [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:29:28 [scrapy.downloadermiddlewares.robotstxt] ERROR: Error downloading <GET https://www.lovest.me/robots.txt>: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+Traceback (most recent call last):
+  File "C:\Users\Miyuki\PycharmProjects\Influnc+\venv\lib\site-packages\scrapy\core\downloader\middleware.py", line 49, in process_request
+    return (yield download_func(request=request, spider=spider))
+twisted.web._newclient.ResponseNeverReceived: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:29:32 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://blog.m0re.cn/robots.txt> (failed 3 times): [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:29:32 [scrapy.downloadermiddlewares.robotstxt] ERROR: Error downloading <GET https://blog.m0re.cn/robots.txt>: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+Traceback (most recent call last):
+  File "C:\Users\Miyuki\PycharmProjects\Influnc+\venv\lib\site-packages\scrapy\core\downloader\middleware.py", line 49, in process_request
+    return (yield download_func(request=request, spider=spider))
+twisted.web._newclient.ResponseNeverReceived: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:29:33 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://hicasper.com/robots.txt> (failed 3 times): [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:29:33 [scrapy.downloadermiddlewares.robotstxt] ERROR: Error downloading <GET https://hicasper.com/robots.txt>: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+Traceback (most recent call last):
+  File "C:\Users\Miyuki\PycharmProjects\Influnc+\venv\lib\site-packages\scrapy\core\downloader\middleware.py", line 49, in process_request
+    return (yield download_func(request=request, spider=spider))
+twisted.web._newclient.ResponseNeverReceived: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:29:48 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://www.chuckle.top/robots.txt> (failed 3 times): [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:29:48 [scrapy.downloadermiddlewares.robotstxt] ERROR: Error downloading <GET https://www.chuckle.top/robots.txt>: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+Traceback (most recent call last):
+  File "C:\Users\Miyuki\PycharmProjects\Influnc+\venv\lib\site-packages\scrapy\core\downloader\middleware.py", line 49, in process_request
+    return (yield download_func(request=request, spider=spider))
+twisted.web._newclient.ResponseNeverReceived: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:29:48 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://wind.ink/robots.txt> (failed 3 times): [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:29:48 [scrapy.downloadermiddlewares.robotstxt] ERROR: Error downloading <GET https://wind.ink/robots.txt>: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+Traceback (most recent call last):
+  File "C:\Users\Miyuki\PycharmProjects\Influnc+\venv\lib\site-packages\scrapy\core\downloader\middleware.py", line 49, in process_request
+    return (yield download_func(request=request, spider=spider))
+twisted.web._newclient.ResponseNeverReceived: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:29:49 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://imqyw.com/robots.txt> (failed 3 times): [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:29:49 [scrapy.downloadermiddlewares.robotstxt] ERROR: Error downloading <GET https://imqyw.com/robots.txt>: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+Traceback (most recent call last):
+  File "C:\Users\Miyuki\PycharmProjects\Influnc+\venv\lib\site-packages\scrapy\core\downloader\middleware.py", line 49, in process_request
+    return (yield download_func(request=request, spider=spider))
+twisted.web._newclient.ResponseNeverReceived: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:29:53 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://lablog.net/robots.txt> (failed 3 times): [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:29:53 [scrapy.downloadermiddlewares.robotstxt] ERROR: Error downloading <GET https://lablog.net/robots.txt>: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+Traceback (most recent call last):
+  File "C:\Users\Miyuki\PycharmProjects\Influnc+\venv\lib\site-packages\scrapy\core\downloader\middleware.py", line 49, in process_request
+    return (yield download_func(request=request, spider=spider))
+twisted.web._newclient.ResponseNeverReceived: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:29:54 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://WWW.cfblog.site/robots.txt> (failed 3 times): [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:29:54 [scrapy.downloadermiddlewares.robotstxt] ERROR: Error downloading <GET https://WWW.cfblog.site/robots.txt>: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+Traceback (most recent call last):
+  File "C:\Users\Miyuki\PycharmProjects\Influnc+\venv\lib\site-packages\scrapy\core\downloader\middleware.py", line 49, in process_request
+    return (yield download_func(request=request, spider=spider))
+twisted.web._newclient.ResponseNeverReceived: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:30:00 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://www.seghart.com/robots.txt> (failed 3 times): [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:30:00 [scrapy.downloadermiddlewares.robotstxt] ERROR: Error downloading <GET https://www.seghart.com/robots.txt>: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+Traceback (most recent call last):
+  File "C:\Users\Miyuki\PycharmProjects\Influnc+\venv\lib\site-packages\scrapy\core\downloader\middleware.py", line 49, in process_request
+    return (yield download_func(request=request, spider=spider))
+twisted.web._newclient.ResponseNeverReceived: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:30:06 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://likeyou.cool/robots.txt> (failed 3 times): [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:30:06 [scrapy.downloadermiddlewares.robotstxt] ERROR: Error downloading <GET https://likeyou.cool/robots.txt>: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+Traceback (most recent call last):
+  File "C:\Users\Miyuki\PycharmProjects\Influnc+\venv\lib\site-packages\scrapy\core\downloader\middleware.py", line 49, in process_request
+    return (yield download_func(request=request, spider=spider))
+twisted.web._newclient.ResponseNeverReceived: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:30:09 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://www.yanzhaochang.top/robots.txt> (failed 3 times): [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:30:09 [scrapy.downloadermiddlewares.robotstxt] ERROR: Error downloading <GET https://www.yanzhaochang.top/robots.txt>: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+Traceback (most recent call last):
+  File "C:\Users\Miyuki\PycharmProjects\Influnc+\venv\lib\site-packages\scrapy\core\downloader\middleware.py", line 49, in process_request
+    return (yield download_func(request=request, spider=spider))
+twisted.web._newclient.ResponseNeverReceived: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:34:37 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://www.SHIZUMIGO.com/robots.txt> (failed 3 times): [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:34:37 [scrapy.downloadermiddlewares.robotstxt] ERROR: Error downloading <GET https://www.SHIZUMIGO.com/robots.txt>: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+Traceback (most recent call last):
+  File "C:\Users\Miyuki\PycharmProjects\Influnc+\venv\lib\site-packages\scrapy\core\downloader\middleware.py", line 49, in process_request
+    return (yield download_func(request=request, spider=spider))
+twisted.web._newclient.ResponseNeverReceived: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:34:42 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://48/robots.txt> (failed 3 times): DNS lookup failed: no results for hostname lookup: 48.
+2022-07-08 23:34:42 [scrapy.downloadermiddlewares.robotstxt] ERROR: Error downloading <GET https://48/robots.txt>: DNS lookup failed: no results for hostname lookup: 48.
+Traceback (most recent call last):
+  File "C:\Users\Miyuki\PycharmProjects\Influnc+\venv\lib\site-packages\twisted\internet\defer.py", line 1656, in _inlineCallbacks
+    result = current_context.run(
+  File "C:\Users\Miyuki\PycharmProjects\Influnc+\venv\lib\site-packages\twisted\python\failure.py", line 514, in throwExceptionIntoGenerator
+    return g.throw(self.type, self.value, self.tb)
+  File "C:\Users\Miyuki\PycharmProjects\Influnc+\venv\lib\site-packages\scrapy\core\downloader\middleware.py", line 49, in process_request
+    return (yield download_func(request=request, spider=spider))
+  File "C:\Users\Miyuki\PycharmProjects\Influnc+\venv\lib\site-packages\twisted\internet\defer.py", line 857, in _runCallbacks
+    current.result = callback(  # type: ignore[misc]
+  File "C:\Users\Miyuki\PycharmProjects\Influnc+\venv\lib\site-packages\twisted\internet\endpoints.py", line 1020, in startConnectionAttempts
+    raise error.DNSLookupError(
+twisted.internet.error.DNSLookupError: DNS lookup failed: no results for hostname lookup: 48.
+2022-07-08 23:34:44 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://www.fczbl.vip/robots.txt> (failed 3 times): [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:34:44 [scrapy.downloadermiddlewares.robotstxt] ERROR: Error downloading <GET https://www.fczbl.vip/robots.txt>: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+Traceback (most recent call last):
+  File "C:\Users\Miyuki\PycharmProjects\Influnc+\venv\lib\site-packages\scrapy\core\downloader\middleware.py", line 49, in process_request
+    return (yield download_func(request=request, spider=spider))
+twisted.web._newclient.ResponseNeverReceived: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:34:45 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://www.52ecy.cn/robots.txt> (failed 3 times): [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:34:45 [scrapy.downloadermiddlewares.robotstxt] ERROR: Error downloading <GET https://www.52ecy.cn/robots.txt>: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+Traceback (most recent call last):
+  File "C:\Users\Miyuki\PycharmProjects\Influnc+\venv\lib\site-packages\scrapy\core\downloader\middleware.py", line 49, in process_request
+    return (yield download_func(request=request, spider=spider))
+twisted.web._newclient.ResponseNeverReceived: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:34:46 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://swiity.com/robots.txt> (failed 3 times): [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:34:46 [scrapy.downloadermiddlewares.robotstxt] ERROR: Error downloading <GET https://swiity.com/robots.txt>: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+Traceback (most recent call last):
+  File "C:\Users\Miyuki\PycharmProjects\Influnc+\venv\lib\site-packages\scrapy\core\downloader\middleware.py", line 49, in process_request
+    return (yield download_func(request=request, spider=spider))
+twisted.web._newclient.ResponseNeverReceived: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:34:48 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://phower.me/robots.txt> (failed 3 times): 503 Service Unavailable
+2022-07-08 23:34:48 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://www.slidyy.com/robots.txt> (failed 3 times): [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:34:48 [scrapy.downloadermiddlewares.robotstxt] ERROR: Error downloading <GET https://www.slidyy.com/robots.txt>: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+Traceback (most recent call last):
+  File "C:\Users\Miyuki\PycharmProjects\Influnc+\venv\lib\site-packages\scrapy\core\downloader\middleware.py", line 49, in process_request
+    return (yield download_func(request=request, spider=spider))
+twisted.web._newclient.ResponseNeverReceived: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:34:51 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://www.qijiu.red/robots.txt> (failed 3 times): [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:34:51 [scrapy.downloadermiddlewares.robotstxt] ERROR: Error downloading <GET https://www.qijiu.red/robots.txt>: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+Traceback (most recent call last):
+  File "C:\Users\Miyuki\PycharmProjects\Influnc+\venv\lib\site-packages\scrapy\core\downloader\middleware.py", line 49, in process_request
+    return (yield download_func(request=request, spider=spider))
+twisted.web._newclient.ResponseNeverReceived: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:34:59 [scrapy.core.scraper] ERROR: Spider error processing <GET https://wind.ink> (referer: None)
+Traceback (most recent call last):
+  File "C:\Users\Miyuki\PycharmProjects\Influnc+\venv\lib\site-packages\peewee.py", line 3197, in execute_sql
+    cursor.execute(sql, params or ())
+sqlite3.IntegrityError: NOT NULL constraint failed: blog.title
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Miyuki\PycharmProjects\Influnc+\venv\lib\site-packages\scrapy\utils\defer.py", line 132, in iter_errback
+    yield next(it)
+  File "C:\Users\Miyuki\PycharmProjects\Influnc+\venv\lib\site-packages\scrapy\utils\python.py", line 354, in __next__
+    return next(self.data)
+  File "C:\Users\Miyuki\PycharmProjects\Influnc+\venv\lib\site-packages\scrapy\utils\python.py", line 354, in __next__
+    return next(self.data)
+  File "C:\Users\Miyuki\PycharmProjects\Influnc+\venv\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\Miyuki\PycharmProjects\Influnc+\venv\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "C:\Users\Miyuki\PycharmProjects\Influnc+\venv\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\Miyuki\PycharmProjects\Influnc+\venv\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 342, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Users\Miyuki\PycharmProjects\Influnc+\venv\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\Miyuki\PycharmProjects\Influnc+\venv\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 40, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\Miyuki\PycharmProjects\Influnc+\venv\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\Miyuki\PycharmProjects\Influnc+\venv\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\Miyuki\PycharmProjects\Influnc+\venv\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\Miyuki\PycharmProjects\Influnc+\influnc_plus\spiders\blogs_spider.py", line 63, in parse_blog
+    src_blog.save()
+  File "C:\Users\Miyuki\PycharmProjects\Influnc+\venv\lib\site-packages\peewee.py", line 6692, in save
+    rows = self.update(**field_dict).where(self._pk_expr()).execute()
+  File "C:\Users\Miyuki\PycharmProjects\Influnc+\venv\lib\site-packages\peewee.py", line 1927, in inner
+    return method(self, database, *args, **kwargs)
+  File "C:\Users\Miyuki\PycharmProjects\Influnc+\venv\lib\site-packages\peewee.py", line 1998, in execute
+    return self._execute(database)
+  File "C:\Users\Miyuki\PycharmProjects\Influnc+\venv\lib\site-packages\peewee.py", line 2511, in _execute
+    cursor = database.execute(self)
+  File "C:\Users\Miyuki\PycharmProjects\Influnc+\venv\lib\site-packages\peewee.py", line 3210, in execute
+    return self.execute_sql(sql, params, commit=commit)
+  File "C:\Users\Miyuki\PycharmProjects\Influnc+\venv\lib\site-packages\peewee.py", line 3194, in execute_sql
+    with __exception_wrapper__:
+  File "C:\Users\Miyuki\PycharmProjects\Influnc+\venv\lib\site-packages\peewee.py", line 2970, in __exit__
+    reraise(new_type, new_type(exc_value, *exc_args), traceback)
+  File "C:\Users\Miyuki\PycharmProjects\Influnc+\venv\lib\site-packages\peewee.py", line 191, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Users\Miyuki\PycharmProjects\Influnc+\venv\lib\site-packages\peewee.py", line 3197, in execute_sql
+    cursor.execute(sql, params or ())
+peewee.IntegrityError: NOT NULL constraint failed: blog.title
+2022-07-08 23:35:04 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://blog.linlinzzo.top/robots.txt> (failed 3 times): [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:35:04 [scrapy.downloadermiddlewares.robotstxt] ERROR: Error downloading <GET https://blog.linlinzzo.top/robots.txt>: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+Traceback (most recent call last):
+  File "C:\Users\Miyuki\PycharmProjects\Influnc+\venv\lib\site-packages\scrapy\core\downloader\middleware.py", line 49, in process_request
+    return (yield download_func(request=request, spider=spider))
+twisted.web._newclient.ResponseNeverReceived: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:35:08 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://blog.3w3k.com/robots.txt> (failed 3 times): [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:35:08 [scrapy.downloadermiddlewares.robotstxt] ERROR: Error downloading <GET https://blog.3w3k.com/robots.txt>: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+Traceback (most recent call last):
+  File "C:\Users\Miyuki\PycharmProjects\Influnc+\venv\lib\site-packages\scrapy\core\downloader\middleware.py", line 49, in process_request
+    return (yield download_func(request=request, spider=spider))
+twisted.web._newclient.ResponseNeverReceived: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:35:09 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://bobalaohejinhuishou.xiaosuanlaohuishou.com/robots.txt> (failed 3 times): [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:35:09 [scrapy.downloadermiddlewares.robotstxt] ERROR: Error downloading <GET https://bobalaohejinhuishou.xiaosuanlaohuishou.com/robots.txt>: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+Traceback (most recent call last):
+  File "C:\Users\Miyuki\PycharmProjects\Influnc+\venv\lib\site-packages\scrapy\core\downloader\middleware.py", line 49, in process_request
+    return (yield download_func(request=request, spider=spider))
+twisted.web._newclient.ResponseNeverReceived: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:35:10 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://guojincheng.top/robots.txt> (failed 3 times): [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:35:10 [scrapy.downloadermiddlewares.robotstxt] ERROR: Error downloading <GET https://guojincheng.top/robots.txt>: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+Traceback (most recent call last):
+  File "C:\Users\Miyuki\PycharmProjects\Influnc+\venv\lib\site-packages\scrapy\core\downloader\middleware.py", line 49, in process_request
+    return (yield download_func(request=request, spider=spider))
+twisted.web._newclient.ResponseNeverReceived: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:35:14 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://sqdxwz.com/robots.txt> (failed 3 times): [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:35:14 [scrapy.downloadermiddlewares.robotstxt] ERROR: Error downloading <GET https://sqdxwz.com/robots.txt>: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+Traceback (most recent call last):
+  File "C:\Users\Miyuki\PycharmProjects\Influnc+\venv\lib\site-packages\scrapy\core\downloader\middleware.py", line 49, in process_request
+    return (yield download_func(request=request, spider=spider))
+twisted.web._newclient.ResponseNeverReceived: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:35:17 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://www.java1234.com/robots.txt> (failed 3 times): [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'length mismatch')]>]
+2022-07-08 23:35:17 [scrapy.downloadermiddlewares.robotstxt] ERROR: Error downloading <GET https://www.java1234.com/robots.txt>: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'length mismatch')]>]
+Traceback (most recent call last):
+  File "C:\Users\Miyuki\PycharmProjects\Influnc+\venv\lib\site-packages\scrapy\core\downloader\middleware.py", line 49, in process_request
+    return (yield download_func(request=request, spider=spider))
+twisted.web._newclient.ResponseNeverReceived: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'length mismatch')]>]
+2022-07-08 23:35:19 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://xiangjunhong.com/robots.txt> (failed 3 times): [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:35:19 [scrapy.downloadermiddlewares.robotstxt] ERROR: Error downloading <GET https://xiangjunhong.com/robots.txt>: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+Traceback (most recent call last):
+  File "C:\Users\Miyuki\PycharmProjects\Influnc+\venv\lib\site-packages\scrapy\core\downloader\middleware.py", line 49, in process_request
+    return (yield download_func(request=request, spider=spider))
+twisted.web._newclient.ResponseNeverReceived: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:35:19 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://www.v8bt.com/robots.txt> (failed 3 times): [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:35:19 [scrapy.downloadermiddlewares.robotstxt] ERROR: Error downloading <GET https://www.v8bt.com/robots.txt>: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+Traceback (most recent call last):
+  File "C:\Users\Miyuki\PycharmProjects\Influnc+\venv\lib\site-packages\scrapy\core\downloader\middleware.py", line 49, in process_request
+    return (yield download_func(request=request, spider=spider))
+twisted.web._newclient.ResponseNeverReceived: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:35:23 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://xn--pvra047u/robots.txt> (failed 3 times): DNS lookup failed: no results for hostname lookup: xn--pvra047u.
+2022-07-08 23:35:23 [scrapy.downloadermiddlewares.robotstxt] ERROR: Error downloading <GET https://xn--pvra047u/robots.txt>: DNS lookup failed: no results for hostname lookup: xn--pvra047u.
+Traceback (most recent call last):
+  File "C:\Users\Miyuki\PycharmProjects\Influnc+\venv\lib\site-packages\twisted\internet\defer.py", line 1656, in _inlineCallbacks
+    result = current_context.run(
+  File "C:\Users\Miyuki\PycharmProjects\Influnc+\venv\lib\site-packages\twisted\python\failure.py", line 514, in throwExceptionIntoGenerator
+    return g.throw(self.type, self.value, self.tb)
+  File "C:\Users\Miyuki\PycharmProjects\Influnc+\venv\lib\site-packages\scrapy\core\downloader\middleware.py", line 49, in process_request
+    return (yield download_func(request=request, spider=spider))
+  File "C:\Users\Miyuki\PycharmProjects\Influnc+\venv\lib\site-packages\twisted\internet\defer.py", line 857, in _runCallbacks
+    current.result = callback(  # type: ignore[misc]
+  File "C:\Users\Miyuki\PycharmProjects\Influnc+\venv\lib\site-packages\twisted\internet\endpoints.py", line 1020, in startConnectionAttempts
+    raise error.DNSLookupError(
+twisted.internet.error.DNSLookupError: DNS lookup failed: no results for hostname lookup: xn--pvra047u.
+2022-07-08 23:35:23 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://josephilo.com/robots.txt> (failed 3 times): [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'length mismatch')]>]
+2022-07-08 23:35:23 [scrapy.downloadermiddlewares.robotstxt] ERROR: Error downloading <GET https://josephilo.com/robots.txt>: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'length mismatch')]>]
+Traceback (most recent call last):
+  File "C:\Users\Miyuki\PycharmProjects\Influnc+\venv\lib\site-packages\scrapy\core\downloader\middleware.py", line 49, in process_request
+    return (yield download_func(request=request, spider=spider))
+twisted.web._newclient.ResponseNeverReceived: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'length mismatch')]>]
+2022-07-08 23:35:26 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://csdn.yuanjh.cn/robots.txt> (failed 3 times): [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:35:26 [scrapy.downloadermiddlewares.robotstxt] ERROR: Error downloading <GET https://csdn.yuanjh.cn/robots.txt>: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+Traceback (most recent call last):
+  File "C:\Users\Miyuki\PycharmProjects\Influnc+\venv\lib\site-packages\scrapy\core\downloader\middleware.py", line 49, in process_request
+    return (yield download_func(request=request, spider=spider))
+twisted.web._newclient.ResponseNeverReceived: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:35:26 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://nasaiboy.com/robots.txt> (failed 3 times): [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:35:26 [scrapy.downloadermiddlewares.robotstxt] ERROR: Error downloading <GET https://nasaiboy.com/robots.txt>: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+Traceback (most recent call last):
+  File "C:\Users\Miyuki\PycharmProjects\Influnc+\venv\lib\site-packages\scrapy\core\downloader\middleware.py", line 49, in process_request
+    return (yield download_func(request=request, spider=spider))
+twisted.web._newclient.ResponseNeverReceived: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:35:27 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://www.lczze.cn/robots.txt> (failed 3 times): [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:35:27 [scrapy.downloadermiddlewares.robotstxt] ERROR: Error downloading <GET https://www.lczze.cn/robots.txt>: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+Traceback (most recent call last):
+  File "C:\Users\Miyuki\PycharmProjects\Influnc+\venv\lib\site-packages\scrapy\core\downloader\middleware.py", line 49, in process_request
+    return (yield download_func(request=request, spider=spider))
+twisted.web._newclient.ResponseNeverReceived: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:35:34 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://www.xyu.ink/robots.txt> (failed 3 times): [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:35:34 [scrapy.downloadermiddlewares.robotstxt] ERROR: Error downloading <GET https://www.xyu.ink/robots.txt>: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+Traceback (most recent call last):
+  File "C:\Users\Miyuki\PycharmProjects\Influnc+\venv\lib\site-packages\scrapy\core\downloader\middleware.py", line 49, in process_request
+    return (yield download_func(request=request, spider=spider))
+twisted.web._newclient.ResponseNeverReceived: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:35:35 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://blog.ll0.run/robots.txt> (failed 3 times): [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:35:35 [scrapy.downloadermiddlewares.robotstxt] ERROR: Error downloading <GET https://blog.ll0.run/robots.txt>: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+Traceback (most recent call last):
+  File "C:\Users\Miyuki\PycharmProjects\Influnc+\venv\lib\site-packages\scrapy\core\downloader\middleware.py", line 49, in process_request
+    return (yield download_func(request=request, spider=spider))
+twisted.web._newclient.ResponseNeverReceived: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:35:36 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://www.sifour.fun/robots.txt> (failed 3 times): [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:35:36 [scrapy.downloadermiddlewares.robotstxt] ERROR: Error downloading <GET https://www.sifour.fun/robots.txt>: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+Traceback (most recent call last):
+  File "C:\Users\Miyuki\PycharmProjects\Influnc+\venv\lib\site-packages\scrapy\core\downloader\middleware.py", line 49, in process_request
+    return (yield download_func(request=request, spider=spider))
+twisted.web._newclient.ResponseNeverReceived: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:35:37 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://blog.ikun.wtf/robots.txt> (failed 3 times): [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:35:37 [scrapy.downloadermiddlewares.robotstxt] ERROR: Error downloading <GET https://blog.ikun.wtf/robots.txt>: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+Traceback (most recent call last):
+  File "C:\Users\Miyuki\PycharmProjects\Influnc+\venv\lib\site-packages\scrapy\core\downloader\middleware.py", line 49, in process_request
+    return (yield download_func(request=request, spider=spider))
+twisted.web._newclient.ResponseNeverReceived: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:35:39 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://www.xiaoaitx.com/robots.txt> (failed 3 times): [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:35:39 [scrapy.downloadermiddlewares.robotstxt] ERROR: Error downloading <GET https://www.xiaoaitx.com/robots.txt>: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+Traceback (most recent call last):
+  File "C:\Users\Miyuki\PycharmProjects\Influnc+\venv\lib\site-packages\scrapy\core\downloader\middleware.py", line 49, in process_request
+    return (yield download_func(request=request, spider=spider))
+twisted.web._newclient.ResponseNeverReceived: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:35:40 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://7-kk.cn/robots.txt> (failed 3 times): [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:35:40 [scrapy.downloadermiddlewares.robotstxt] ERROR: Error downloading <GET https://7-kk.cn/robots.txt>: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+Traceback (most recent call last):
+  File "C:\Users\Miyuki\PycharmProjects\Influnc+\venv\lib\site-packages\scrapy\core\downloader\middleware.py", line 49, in process_request
+    return (yield download_func(request=request, spider=spider))
+twisted.web._newclient.ResponseNeverReceived: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:35:44 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://zmmio.com/robots.txt> (failed 3 times): [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:35:44 [scrapy.downloadermiddlewares.robotstxt] ERROR: Error downloading <GET https://zmmio.com/robots.txt>: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+Traceback (most recent call last):
+  File "C:\Users\Miyuki\PycharmProjects\Influnc+\venv\lib\site-packages\scrapy\core\downloader\middleware.py", line 49, in process_request
+    return (yield download_func(request=request, spider=spider))
+twisted.web._newclient.ResponseNeverReceived: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:35:46 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://www.linghuzhan.com/robots.txt> (failed 3 times): [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'sslv3 alert handshake failure')]>]
+2022-07-08 23:35:46 [scrapy.downloadermiddlewares.robotstxt] ERROR: Error downloading <GET https://www.linghuzhan.com/robots.txt>: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'sslv3 alert handshake failure')]>]
+Traceback (most recent call last):
+  File "C:\Users\Miyuki\PycharmProjects\Influnc+\venv\lib\site-packages\scrapy\core\downloader\middleware.py", line 49, in process_request
+    return (yield download_func(request=request, spider=spider))
+twisted.web._newclient.ResponseNeverReceived: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'sslv3 alert handshake failure')]>]
+2022-07-08 23:35:49 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://2288m.com/robots.txt> (failed 3 times): [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:35:49 [scrapy.downloadermiddlewares.robotstxt] ERROR: Error downloading <GET https://2288m.com/robots.txt>: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+Traceback (most recent call last):
+  File "C:\Users\Miyuki\PycharmProjects\Influnc+\venv\lib\site-packages\scrapy\core\downloader\middleware.py", line 49, in process_request
+    return (yield download_func(request=request, spider=spider))
+twisted.web._newclient.ResponseNeverReceived: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:35:50 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://www.itcandy.cn/robots.txt> (failed 3 times): [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:35:50 [scrapy.downloadermiddlewares.robotstxt] ERROR: Error downloading <GET https://www.itcandy.cn/robots.txt>: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+Traceback (most recent call last):
+  File "C:\Users\Miyuki\PycharmProjects\Influnc+\venv\lib\site-packages\scrapy\core\downloader\middleware.py", line 49, in process_request
+    return (yield download_func(request=request, spider=spider))
+twisted.web._newclient.ResponseNeverReceived: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:35:50 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://bafu.cc/robots.txt> (failed 3 times): [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:35:50 [scrapy.downloadermiddlewares.robotstxt] ERROR: Error downloading <GET https://bafu.cc/robots.txt>: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+Traceback (most recent call last):
+  File "C:\Users\Miyuki\PycharmProjects\Influnc+\venv\lib\site-packages\scrapy\core\downloader\middleware.py", line 49, in process_request
+    return (yield download_func(request=request, spider=spider))
+twisted.web._newclient.ResponseNeverReceived: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:35:51 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://hiea.top/robots.txt> (failed 3 times): [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:35:51 [scrapy.downloadermiddlewares.robotstxt] ERROR: Error downloading <GET https://hiea.top/robots.txt>: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+Traceback (most recent call last):
+  File "C:\Users\Miyuki\PycharmProjects\Influnc+\venv\lib\site-packages\scrapy\core\downloader\middleware.py", line 49, in process_request
+    return (yield download_func(request=request, spider=spider))
+twisted.web._newclient.ResponseNeverReceived: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:35:53 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://www.jiagongg.com/robots.txt> (failed 3 times): [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:35:53 [scrapy.downloadermiddlewares.robotstxt] ERROR: Error downloading <GET https://www.jiagongg.com/robots.txt>: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+Traceback (most recent call last):
+  File "C:\Users\Miyuki\PycharmProjects\Influnc+\venv\lib\site-packages\scrapy\core\downloader\middleware.py", line 49, in process_request
+    return (yield download_func(request=request, spider=spider))
+twisted.web._newclient.ResponseNeverReceived: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:35:57 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://www.xinwat.com/robots.txt> (failed 3 times): [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:35:57 [scrapy.downloadermiddlewares.robotstxt] ERROR: Error downloading <GET https://www.xinwat.com/robots.txt>: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+Traceback (most recent call last):
+  File "C:\Users\Miyuki\PycharmProjects\Influnc+\venv\lib\site-packages\scrapy\core\downloader\middleware.py", line 49, in process_request
+    return (yield download_func(request=request, spider=spider))
+twisted.web._newclient.ResponseNeverReceived: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:35:57 [scrapy.core.scraper] ERROR: Spider error processing <GET https://gylwj.club> (referer: None)
+Traceback (most recent call last):
+  File "C:\Users\Miyuki\PycharmProjects\Influnc+\venv\lib\site-packages\peewee.py", line 3197, in execute_sql
+    cursor.execute(sql, params or ())
+sqlite3.IntegrityError: NOT NULL constraint failed: blog.title
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Miyuki\PycharmProjects\Influnc+\venv\lib\site-packages\scrapy\utils\defer.py", line 132, in iter_errback
+    yield next(it)
+  File "C:\Users\Miyuki\PycharmProjects\Influnc+\venv\lib\site-packages\scrapy\utils\python.py", line 354, in __next__
+    return next(self.data)
+  File "C:\Users\Miyuki\PycharmProjects\Influnc+\venv\lib\site-packages\scrapy\utils\python.py", line 354, in __next__
+    return next(self.data)
+  File "C:\Users\Miyuki\PycharmProjects\Influnc+\venv\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\Miyuki\PycharmProjects\Influnc+\venv\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "C:\Users\Miyuki\PycharmProjects\Influnc+\venv\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\Miyuki\PycharmProjects\Influnc+\venv\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 342, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Users\Miyuki\PycharmProjects\Influnc+\venv\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\Miyuki\PycharmProjects\Influnc+\venv\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 40, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\Miyuki\PycharmProjects\Influnc+\venv\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\Miyuki\PycharmProjects\Influnc+\venv\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\Miyuki\PycharmProjects\Influnc+\venv\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\Miyuki\PycharmProjects\Influnc+\influnc_plus\spiders\blogs_spider.py", line 63, in parse_blog
+    src_blog.save()
+  File "C:\Users\Miyuki\PycharmProjects\Influnc+\venv\lib\site-packages\peewee.py", line 6692, in save
+    rows = self.update(**field_dict).where(self._pk_expr()).execute()
+  File "C:\Users\Miyuki\PycharmProjects\Influnc+\venv\lib\site-packages\peewee.py", line 1927, in inner
+    return method(self, database, *args, **kwargs)
+  File "C:\Users\Miyuki\PycharmProjects\Influnc+\venv\lib\site-packages\peewee.py", line 1998, in execute
+    return self._execute(database)
+  File "C:\Users\Miyuki\PycharmProjects\Influnc+\venv\lib\site-packages\peewee.py", line 2511, in _execute
+    cursor = database.execute(self)
+  File "C:\Users\Miyuki\PycharmProjects\Influnc+\venv\lib\site-packages\peewee.py", line 3210, in execute
+    return self.execute_sql(sql, params, commit=commit)
+  File "C:\Users\Miyuki\PycharmProjects\Influnc+\venv\lib\site-packages\peewee.py", line 3194, in execute_sql
+    with __exception_wrapper__:
+  File "C:\Users\Miyuki\PycharmProjects\Influnc+\venv\lib\site-packages\peewee.py", line 2970, in __exit__
+    reraise(new_type, new_type(exc_value, *exc_args), traceback)
+  File "C:\Users\Miyuki\PycharmProjects\Influnc+\venv\lib\site-packages\peewee.py", line 191, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Users\Miyuki\PycharmProjects\Influnc+\venv\lib\site-packages\peewee.py", line 3197, in execute_sql
+    cursor.execute(sql, params or ())
+peewee.IntegrityError: NOT NULL constraint failed: blog.title
+2022-07-08 23:35:57 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://nojava.cn/robots.txt> (failed 3 times): [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:35:57 [scrapy.downloadermiddlewares.robotstxt] ERROR: Error downloading <GET https://nojava.cn/robots.txt>: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+Traceback (most recent call last):
+  File "C:\Users\Miyuki\PycharmProjects\Influnc+\venv\lib\site-packages\scrapy\core\downloader\middleware.py", line 49, in process_request
+    return (yield download_func(request=request, spider=spider))
+twisted.web._newclient.ResponseNeverReceived: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:36:03 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://www.zgreat.net/robots.txt> (failed 3 times): [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:36:03 [scrapy.downloadermiddlewares.robotstxt] ERROR: Error downloading <GET https://www.zgreat.net/robots.txt>: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+Traceback (most recent call last):
+  File "C:\Users\Miyuki\PycharmProjects\Influnc+\venv\lib\site-packages\scrapy\core\downloader\middleware.py", line 49, in process_request
+    return (yield download_func(request=request, spider=spider))
+twisted.web._newclient.ResponseNeverReceived: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:36:06 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://www.lianfushun.cn/robots.txt> (failed 3 times): [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:36:06 [scrapy.downloadermiddlewares.robotstxt] ERROR: Error downloading <GET https://www.lianfushun.cn/robots.txt>: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+Traceback (most recent call last):
+  File "C:\Users\Miyuki\PycharmProjects\Influnc+\venv\lib\site-packages\scrapy\core\downloader\middleware.py", line 49, in process_request
+    return (yield download_func(request=request, spider=spider))
+twisted.web._newclient.ResponseNeverReceived: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:36:08 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://www.mdjxinyu.com/robots.txt> (failed 3 times): [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:36:08 [scrapy.downloadermiddlewares.robotstxt] ERROR: Error downloading <GET https://www.mdjxinyu.com/robots.txt>: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+Traceback (most recent call last):
+  File "C:\Users\Miyuki\PycharmProjects\Influnc+\venv\lib\site-packages\scrapy\core\downloader\middleware.py", line 49, in process_request
+    return (yield download_func(request=request, spider=spider))
+twisted.web._newclient.ResponseNeverReceived: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:36:14 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://www.thefoodworld.com/robots.txt> (failed 3 times): [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:36:14 [scrapy.downloadermiddlewares.robotstxt] ERROR: Error downloading <GET https://www.thefoodworld.com/robots.txt>: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+Traceback (most recent call last):
+  File "C:\Users\Miyuki\PycharmProjects\Influnc+\venv\lib\site-packages\scrapy\core\downloader\middleware.py", line 49, in process_request
+    return (yield download_func(request=request, spider=spider))
+twisted.web._newclient.ResponseNeverReceived: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:36:17 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://www.infochems.com/robots.txt> (failed 3 times): [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:36:17 [scrapy.downloadermiddlewares.robotstxt] ERROR: Error downloading <GET https://www.infochems.com/robots.txt>: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+Traceback (most recent call last):
+  File "C:\Users\Miyuki\PycharmProjects\Influnc+\venv\lib\site-packages\scrapy\core\downloader\middleware.py", line 49, in process_request
+    return (yield download_func(request=request, spider=spider))
+twisted.web._newclient.ResponseNeverReceived: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:36:21 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://www.manufacture.com.tw/robots.txt> (failed 3 times): [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:36:21 [scrapy.downloadermiddlewares.robotstxt] ERROR: Error downloading <GET https://www.manufacture.com.tw/robots.txt>: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+Traceback (most recent call last):
+  File "C:\Users\Miyuki\PycharmProjects\Influnc+\venv\lib\site-packages\scrapy\core\downloader\middleware.py", line 49, in process_request
+    return (yield download_func(request=request, spider=spider))
+twisted.web._newclient.ResponseNeverReceived: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:36:23 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://www.chempeople.com/robots.txt> (failed 3 times): [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:36:23 [scrapy.downloadermiddlewares.robotstxt] ERROR: Error downloading <GET https://www.chempeople.com/robots.txt>: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+Traceback (most recent call last):
+  File "C:\Users\Miyuki\PycharmProjects\Influnc+\venv\lib\site-packages\scrapy\core\downloader\middleware.py", line 49, in process_request
+    return (yield download_func(request=request, spider=spider))
+twisted.web._newclient.ResponseNeverReceived: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:36:27 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://www.sell2arabia.com/robots.txt> (failed 3 times): [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:36:27 [scrapy.downloadermiddlewares.robotstxt] ERROR: Error downloading <GET https://www.sell2arabia.com/robots.txt>: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+Traceback (most recent call last):
+  File "C:\Users\Miyuki\PycharmProjects\Influnc+\venv\lib\site-packages\scrapy\core\downloader\middleware.py", line 49, in process_request
+    return (yield download_func(request=request, spider=spider))
+twisted.web._newclient.ResponseNeverReceived: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:36:28 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://www.export-japan.com/robots.txt> (failed 3 times): [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:36:28 [scrapy.downloadermiddlewares.robotstxt] ERROR: Error downloading <GET https://www.export-japan.com/robots.txt>: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+Traceback (most recent call last):
+  File "C:\Users\Miyuki\PycharmProjects\Influnc+\venv\lib\site-packages\scrapy\core\downloader\middleware.py", line 49, in process_request
+    return (yield download_func(request=request, spider=spider))
+twisted.web._newclient.ResponseNeverReceived: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:36:31 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://www.buyersguidechem.de/robots.txt> (failed 3 times): [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'tlsv1 alert internal error')]>]
+2022-07-08 23:36:31 [scrapy.downloadermiddlewares.robotstxt] ERROR: Error downloading <GET https://www.buyersguidechem.de/robots.txt>: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'tlsv1 alert internal error')]>]
+Traceback (most recent call last):
+  File "C:\Users\Miyuki\PycharmProjects\Influnc+\venv\lib\site-packages\scrapy\core\downloader\middleware.py", line 49, in process_request
+    return (yield download_func(request=request, spider=spider))
+twisted.web._newclient.ResponseNeverReceived: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'tlsv1 alert internal error')]>]
+2022-07-08 23:36:34 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://www.domaineasy.net/robots.txt> (failed 3 times): [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:36:34 [scrapy.downloadermiddlewares.robotstxt] ERROR: Error downloading <GET https://www.domaineasy.net/robots.txt>: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+Traceback (most recent call last):
+  File "C:\Users\Miyuki\PycharmProjects\Influnc+\venv\lib\site-packages\scrapy\core\downloader\middleware.py", line 49, in process_request
+    return (yield download_func(request=request, spider=spider))
+twisted.web._newclient.ResponseNeverReceived: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:36:36 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://www.allactiontrade.com/robots.txt> (failed 3 times): [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:36:36 [scrapy.downloadermiddlewares.robotstxt] ERROR: Error downloading <GET https://www.allactiontrade.com/robots.txt>: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+Traceback (most recent call last):
+  File "C:\Users\Miyuki\PycharmProjects\Influnc+\venv\lib\site-packages\scrapy\core\downloader\middleware.py", line 49, in process_request
+    return (yield download_func(request=request, spider=spider))
+twisted.web._newclient.ResponseNeverReceived: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:36:38 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://www.trade-taiwan.org/robots.txt> (failed 3 times): [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:36:38 [scrapy.downloadermiddlewares.robotstxt] ERROR: Error downloading <GET https://www.trade-taiwan.org/robots.txt>: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+Traceback (most recent call last):
+  File "C:\Users\Miyuki\PycharmProjects\Influnc+\venv\lib\site-packages\scrapy\core\downloader\middleware.py", line 49, in process_request
+    return (yield download_func(request=request, spider=spider))
+twisted.web._newclient.ResponseNeverReceived: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:36:42 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://www.wellkang.com/robots.txt> (failed 3 times): [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'tlsv1 alert internal error')]>]
+2022-07-08 23:36:42 [scrapy.downloadermiddlewares.robotstxt] ERROR: Error downloading <GET https://www.wellkang.com/robots.txt>: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'tlsv1 alert internal error')]>]
+Traceback (most recent call last):
+  File "C:\Users\Miyuki\PycharmProjects\Influnc+\venv\lib\site-packages\scrapy\core\downloader\middleware.py", line 49, in process_request
+    return (yield download_func(request=request, spider=spider))
+twisted.web._newclient.ResponseNeverReceived: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'tlsv1 alert internal error')]>]
+2022-07-08 23:36:43 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://www.oilgas.com.cn/robots.txt> (failed 3 times): 502 Bad Gateway
+2022-07-08 23:36:44 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://www.21dianyuan.com/robots.txt> (failed 3 times): 502 Bad Gateway
+2022-07-08 23:36:55 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://www.lingta.com/robots.txt> (failed 3 times): [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:36:55 [scrapy.downloadermiddlewares.robotstxt] ERROR: Error downloading <GET https://www.lingta.com/robots.txt>: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+Traceback (most recent call last):
+  File "C:\Users\Miyuki\PycharmProjects\Influnc+\venv\lib\site-packages\scrapy\core\downloader\middleware.py", line 49, in process_request
+    return (yield download_func(request=request, spider=spider))
+twisted.web._newclient.ResponseNeverReceived: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:37:08 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://www.chemlink.com.au/robots.txt> (failed 3 times): [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:37:08 [scrapy.downloadermiddlewares.robotstxt] ERROR: Error downloading <GET https://www.chemlink.com.au/robots.txt>: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+Traceback (most recent call last):
+  File "C:\Users\Miyuki\PycharmProjects\Influnc+\venv\lib\site-packages\scrapy\core\downloader\middleware.py", line 49, in process_request
+    return (yield download_func(request=request, spider=spider))
+twisted.web._newclient.ResponseNeverReceived: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:37:08 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://www.cheme.cn/robots.txt> (failed 3 times): [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:37:08 [scrapy.downloadermiddlewares.robotstxt] ERROR: Error downloading <GET https://www.cheme.cn/robots.txt>: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+Traceback (most recent call last):
+  File "C:\Users\Miyuki\PycharmProjects\Influnc+\venv\lib\site-packages\scrapy\core\downloader\middleware.py", line 49, in process_request
+    return (yield download_func(request=request, spider=spider))
+twisted.web._newclient.ResponseNeverReceived: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:37:09 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://www.chemindustry.com:8443/robots.txt> (failed 3 times): [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:37:09 [scrapy.downloadermiddlewares.robotstxt] ERROR: Error downloading <GET https://www.chemindustry.com:8443/robots.txt>: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+Traceback (most recent call last):
+  File "C:\Users\Miyuki\PycharmProjects\Influnc+\venv\lib\site-packages\scrapy\core\downloader\middleware.py", line 49, in process_request
+    return (yield download_func(request=request, spider=spider))
+twisted.web._newclient.ResponseNeverReceived: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:37:10 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://www.31hx.com/robots.txt> (failed 3 times): [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:37:10 [scrapy.downloadermiddlewares.robotstxt] ERROR: Error downloading <GET https://www.31hx.com/robots.txt>: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+Traceback (most recent call last):
+  File "C:\Users\Miyuki\PycharmProjects\Influnc+\venv\lib\site-packages\scrapy\core\downloader\middleware.py", line 49, in process_request
+    return (yield download_func(request=request, spider=spider))
+twisted.web._newclient.ResponseNeverReceived: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:37:11 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.31wfb.com> (referer: None)
+Traceback (most recent call last):
+  File "C:\Users\Miyuki\PycharmProjects\Influnc+\venv\lib\site-packages\peewee.py", line 3197, in execute_sql
+    cursor.execute(sql, params or ())
+sqlite3.IntegrityError: NOT NULL constraint failed: blog.title
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Miyuki\PycharmProjects\Influnc+\venv\lib\site-packages\scrapy\utils\defer.py", line 132, in iter_errback
+    yield next(it)
+  File "C:\Users\Miyuki\PycharmProjects\Influnc+\venv\lib\site-packages\scrapy\utils\python.py", line 354, in __next__
+    return next(self.data)
+  File "C:\Users\Miyuki\PycharmProjects\Influnc+\venv\lib\site-packages\scrapy\utils\python.py", line 354, in __next__
+    return next(self.data)
+  File "C:\Users\Miyuki\PycharmProjects\Influnc+\venv\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\Miyuki\PycharmProjects\Influnc+\venv\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "C:\Users\Miyuki\PycharmProjects\Influnc+\venv\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\Miyuki\PycharmProjects\Influnc+\venv\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 342, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Users\Miyuki\PycharmProjects\Influnc+\venv\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\Miyuki\PycharmProjects\Influnc+\venv\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 40, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\Miyuki\PycharmProjects\Influnc+\venv\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\Miyuki\PycharmProjects\Influnc+\venv\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\Miyuki\PycharmProjects\Influnc+\venv\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\Miyuki\PycharmProjects\Influnc+\influnc_plus\spiders\blogs_spider.py", line 63, in parse_blog
+    src_blog.save()
+  File "C:\Users\Miyuki\PycharmProjects\Influnc+\venv\lib\site-packages\peewee.py", line 6692, in save
+    rows = self.update(**field_dict).where(self._pk_expr()).execute()
+  File "C:\Users\Miyuki\PycharmProjects\Influnc+\venv\lib\site-packages\peewee.py", line 1927, in inner
+    return method(self, database, *args, **kwargs)
+  File "C:\Users\Miyuki\PycharmProjects\Influnc+\venv\lib\site-packages\peewee.py", line 1998, in execute
+    return self._execute(database)
+  File "C:\Users\Miyuki\PycharmProjects\Influnc+\venv\lib\site-packages\peewee.py", line 2511, in _execute
+    cursor = database.execute(self)
+  File "C:\Users\Miyuki\PycharmProjects\Influnc+\venv\lib\site-packages\peewee.py", line 3210, in execute
+    return self.execute_sql(sql, params, commit=commit)
+  File "C:\Users\Miyuki\PycharmProjects\Influnc+\venv\lib\site-packages\peewee.py", line 3194, in execute_sql
+    with __exception_wrapper__:
+  File "C:\Users\Miyuki\PycharmProjects\Influnc+\venv\lib\site-packages\peewee.py", line 2970, in __exit__
+    reraise(new_type, new_type(exc_value, *exc_args), traceback)
+  File "C:\Users\Miyuki\PycharmProjects\Influnc+\venv\lib\site-packages\peewee.py", line 191, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Users\Miyuki\PycharmProjects\Influnc+\venv\lib\site-packages\peewee.py", line 3197, in execute_sql
+    cursor.execute(sql, params or ())
+peewee.IntegrityError: NOT NULL constraint failed: blog.title
+2022-07-08 23:37:15 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://www.chemease.com/robots.txt> (failed 3 times): [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:37:15 [scrapy.downloadermiddlewares.robotstxt] ERROR: Error downloading <GET https://www.chemease.com/robots.txt>: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+Traceback (most recent call last):
+  File "C:\Users\Miyuki\PycharmProjects\Influnc+\venv\lib\site-packages\scrapy\core\downloader\middleware.py", line 49, in process_request
+    return (yield download_func(request=request, spider=spider))
+twisted.web._newclient.ResponseNeverReceived: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:37:16 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://www.31xjxl.com/robots.txt> (failed 3 times): [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:37:16 [scrapy.downloadermiddlewares.robotstxt] ERROR: Error downloading <GET https://www.31xjxl.com/robots.txt>: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+Traceback (most recent call last):
+  File "C:\Users\Miyuki\PycharmProjects\Influnc+\venv\lib\site-packages\scrapy\core\downloader\middleware.py", line 49, in process_request
+    return (yield download_func(request=request, spider=spider))
+twisted.web._newclient.ResponseNeverReceived: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:37:21 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://www.31hzp.com/robots.txt> (failed 3 times): [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:37:21 [scrapy.downloadermiddlewares.robotstxt] ERROR: Error downloading <GET https://www.31hzp.com/robots.txt>: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+Traceback (most recent call last):
+  File "C:\Users\Miyuki\PycharmProjects\Influnc+\venv\lib\site-packages\scrapy\core\downloader\middleware.py", line 49, in process_request
+    return (yield download_func(request=request, spider=spider))
+twisted.web._newclient.ResponseNeverReceived: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:37:22 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://www.21cp.net/robots.txt> (failed 3 times): [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:37:22 [scrapy.downloadermiddlewares.robotstxt] ERROR: Error downloading <GET https://www.21cp.net/robots.txt>: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+Traceback (most recent call last):
+  File "C:\Users\Miyuki\PycharmProjects\Influnc+\venv\lib\site-packages\scrapy\core\downloader\middleware.py", line 49, in process_request
+    return (yield download_func(request=request, spider=spider))
+twisted.web._newclient.ResponseNeverReceived: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:37:24 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://www.chemindustry.com:8443/index.html> (failed 3 times): [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:37:26 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://www.hgbook.com/robots.txt> (failed 3 times): [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'tlsv1 alert internal error')]>]
+2022-07-08 23:37:26 [scrapy.downloadermiddlewares.robotstxt] ERROR: Error downloading <GET https://www.hgbook.com/robots.txt>: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'tlsv1 alert internal error')]>]
+Traceback (most recent call last):
+  File "C:\Users\Miyuki\PycharmProjects\Influnc+\venv\lib\site-packages\scrapy\core\downloader\middleware.py", line 49, in process_request
+    return (yield download_func(request=request, spider=spider))
+twisted.web._newclient.ResponseNeverReceived: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'tlsv1 alert internal error')]>]
+2022-07-08 23:37:33 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://www.cinic.org.cn/robots.txt> (failed 3 times): [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:37:33 [scrapy.downloadermiddlewares.robotstxt] ERROR: Error downloading <GET https://www.cinic.org.cn/robots.txt>: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+Traceback (most recent call last):
+  File "C:\Users\Miyuki\PycharmProjects\Influnc+\venv\lib\site-packages\scrapy\core\downloader\middleware.py", line 49, in process_request
+    return (yield download_func(request=request, spider=spider))
+twisted.web._newclient.ResponseNeverReceived: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:37:34 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://www.51report.com/robots.txt> (failed 3 times): [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:37:34 [scrapy.downloadermiddlewares.robotstxt] ERROR: Error downloading <GET https://www.51report.com/robots.txt>: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+Traceback (most recent call last):
+  File "C:\Users\Miyuki\PycharmProjects\Influnc+\venv\lib\site-packages\scrapy\core\downloader\middleware.py", line 49, in process_request
+    return (yield download_func(request=request, spider=spider))
+twisted.web._newclient.ResponseNeverReceived: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:37:37 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://www.chinaccm.com/robots.txt> (failed 3 times): [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:37:37 [scrapy.downloadermiddlewares.robotstxt] ERROR: Error downloading <GET https://www.chinaccm.com/robots.txt>: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+Traceback (most recent call last):
+  File "C:\Users\Miyuki\PycharmProjects\Influnc+\venv\lib\site-packages\scrapy\core\downloader\middleware.py", line 49, in process_request
+    return (yield download_func(request=request, spider=spider))
+twisted.web._newclient.ResponseNeverReceived: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:37:39 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://www.netshow.com.cn/robots.txt> (failed 3 times): [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:37:39 [scrapy.downloadermiddlewares.robotstxt] ERROR: Error downloading <GET https://www.netshow.com.cn/robots.txt>: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+Traceback (most recent call last):
+  File "C:\Users\Miyuki\PycharmProjects\Influnc+\venv\lib\site-packages\scrapy\core\downloader\middleware.py", line 49, in process_request
+    return (yield download_func(request=request, spider=spider))
+twisted.web._newclient.ResponseNeverReceived: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:37:41 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://www.5ipatent.com/robots.txt> (failed 3 times): [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:37:41 [scrapy.downloadermiddlewares.robotstxt] ERROR: Error downloading <GET https://www.5ipatent.com/robots.txt>: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+Traceback (most recent call last):
+  File "C:\Users\Miyuki\PycharmProjects\Influnc+\venv\lib\site-packages\scrapy\core\downloader\middleware.py", line 49, in process_request
+    return (yield download_func(request=request, spider=spider))
+twisted.web._newclient.ResponseNeverReceived: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:37:41 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://www.cmss.org.cn/robots.txt> (failed 3 times): [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'sslv3 alert handshake failure')]>]
+2022-07-08 23:37:41 [scrapy.downloadermiddlewares.robotstxt] ERROR: Error downloading <GET https://www.cmss.org.cn/robots.txt>: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'sslv3 alert handshake failure')]>]
+Traceback (most recent call last):
+  File "C:\Users\Miyuki\PycharmProjects\Influnc+\venv\lib\site-packages\scrapy\core\downloader\middleware.py", line 49, in process_request
+    return (yield download_func(request=request, spider=spider))
+twisted.web._newclient.ResponseNeverReceived: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'sslv3 alert handshake failure')]>]
+2022-07-08 23:37:41 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://www.fxxh.org.cn/robots.txt> (failed 3 times): [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:37:41 [scrapy.downloadermiddlewares.robotstxt] ERROR: Error downloading <GET https://www.fxxh.org.cn/robots.txt>: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+Traceback (most recent call last):
+  File "C:\Users\Miyuki\PycharmProjects\Influnc+\venv\lib\site-packages\scrapy\core\downloader\middleware.py", line 49, in process_request
+    return (yield download_func(request=request, spider=spider))
+twisted.web._newclient.ResponseNeverReceived: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:37:47 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://www.eurotradeconcept.nl/robots.txt> (failed 3 times): [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:37:47 [scrapy.downloadermiddlewares.robotstxt] ERROR: Error downloading <GET https://www.eurotradeconcept.nl/robots.txt>: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+Traceback (most recent call last):
+  File "C:\Users\Miyuki\PycharmProjects\Influnc+\venv\lib\site-packages\scrapy\core\downloader\middleware.py", line 49, in process_request
+    return (yield download_func(request=request, spider=spider))
+twisted.web._newclient.ResponseNeverReceived: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:37:47 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://acg.blue/robots.txt> (failed 3 times): [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:37:47 [scrapy.downloadermiddlewares.robotstxt] ERROR: Error downloading <GET https://acg.blue/robots.txt>: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+Traceback (most recent call last):
+  File "C:\Users\Miyuki\PycharmProjects\Influnc+\venv\lib\site-packages\scrapy\core\downloader\middleware.py", line 49, in process_request
+    return (yield download_func(request=request, spider=spider))
+twisted.web._newclient.ResponseNeverReceived: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:37:55 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://www.linpin.com/robots.txt> (failed 3 times): [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:37:55 [scrapy.downloadermiddlewares.robotstxt] ERROR: Error downloading <GET https://www.linpin.com/robots.txt>: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+Traceback (most recent call last):
+  File "C:\Users\Miyuki\PycharmProjects\Influnc+\venv\lib\site-packages\scrapy\core\downloader\middleware.py", line 49, in process_request
+    return (yield download_func(request=request, spider=spider))
+twisted.web._newclient.ResponseNeverReceived: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:37:57 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://www.caia.org.cn/robots.txt> (failed 3 times): [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:37:57 [scrapy.downloadermiddlewares.robotstxt] ERROR: Error downloading <GET https://www.caia.org.cn/robots.txt>: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+Traceback (most recent call last):
+  File "C:\Users\Miyuki\PycharmProjects\Influnc+\venv\lib\site-packages\scrapy\core\downloader\middleware.py", line 49, in process_request
+    return (yield download_func(request=request, spider=spider))
+twisted.web._newclient.ResponseNeverReceived: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:37:58 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://www.jiancai365.cn/robots.txt> (failed 3 times): [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:37:58 [scrapy.downloadermiddlewares.robotstxt] ERROR: Error downloading <GET https://www.jiancai365.cn/robots.txt>: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+Traceback (most recent call last):
+  File "C:\Users\Miyuki\PycharmProjects\Influnc+\venv\lib\site-packages\scrapy\core\downloader\middleware.py", line 49, in process_request
+    return (yield download_func(request=request, spider=spider))
+twisted.web._newclient.ResponseNeverReceived: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:38:03 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://www.reagent.com.cn/robots.txt> (failed 3 times): [<twisted.python.failure.Failure twisted.internet.error.ConnectionDone: Connection was closed cleanly.>]
+2022-07-08 23:38:03 [scrapy.downloadermiddlewares.robotstxt] ERROR: Error downloading <GET https://www.reagent.com.cn/robots.txt>: [<twisted.python.failure.Failure twisted.internet.error.ConnectionDone: Connection was closed cleanly.>]
+Traceback (most recent call last):
+  File "C:\Users\Miyuki\PycharmProjects\Influnc+\venv\lib\site-packages\scrapy\core\downloader\middleware.py", line 49, in process_request
+    return (yield download_func(request=request, spider=spider))
+twisted.web._newclient.ResponseNeverReceived: [<twisted.python.failure.Failure twisted.internet.error.ConnectionDone: Connection was closed cleanly.>]
+2022-07-08 23:38:05 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://www.foods1.com/robots.txt> (failed 3 times): [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:38:05 [scrapy.downloadermiddlewares.robotstxt] ERROR: Error downloading <GET https://www.foods1.com/robots.txt>: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+Traceback (most recent call last):
+  File "C:\Users\Miyuki\PycharmProjects\Influnc+\venv\lib\site-packages\scrapy\core\downloader\middleware.py", line 49, in process_request
+    return (yield download_func(request=request, spider=spider))
+twisted.web._newclient.ResponseNeverReceived: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:38:06 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://www.eduienet.com/robots.txt> (failed 3 times): [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:38:06 [scrapy.downloadermiddlewares.robotstxt] ERROR: Error downloading <GET https://www.eduienet.com/robots.txt>: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+Traceback (most recent call last):
+  File "C:\Users\Miyuki\PycharmProjects\Influnc+\venv\lib\site-packages\scrapy\core\downloader\middleware.py", line 49, in process_request
+    return (yield download_func(request=request, spider=spider))
+twisted.web._newclient.ResponseNeverReceived: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:38:08 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://www.dadou.com/robots.txt> (failed 3 times): [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:38:08 [scrapy.downloadermiddlewares.robotstxt] ERROR: Error downloading <GET https://www.dadou.com/robots.txt>: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+Traceback (most recent call last):
+  File "C:\Users\Miyuki\PycharmProjects\Influnc+\venv\lib\site-packages\scrapy\core\downloader\middleware.py", line 49, in process_request
+    return (yield download_func(request=request, spider=spider))
+twisted.web._newclient.ResponseNeverReceived: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:38:10 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://www.31jmw.com/robots.txt> (failed 3 times): [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:38:10 [scrapy.downloadermiddlewares.robotstxt] ERROR: Error downloading <GET https://www.31jmw.com/robots.txt>: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+Traceback (most recent call last):
+  File "C:\Users\Miyuki\PycharmProjects\Influnc+\venv\lib\site-packages\scrapy\core\downloader\middleware.py", line 49, in process_request
+    return (yield download_func(request=request, spider=spider))
+twisted.web._newclient.ResponseNeverReceived: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:38:12 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://www.gtobal.com/robots.txt> (failed 3 times): [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:38:12 [scrapy.downloadermiddlewares.robotstxt] ERROR: Error downloading <GET https://www.gtobal.com/robots.txt>: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+Traceback (most recent call last):
+  File "C:\Users\Miyuki\PycharmProjects\Influnc+\venv\lib\site-packages\scrapy\core\downloader\middleware.py", line 49, in process_request
+    return (yield download_func(request=request, spider=spider))
+twisted.web._newclient.ResponseNeverReceived: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:38:13 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://www.chem.hc360.com/robots.txt> (failed 3 times): [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:38:13 [scrapy.downloadermiddlewares.robotstxt] ERROR: Error downloading <GET https://www.chem.hc360.com/robots.txt>: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+Traceback (most recent call last):
+  File "C:\Users\Miyuki\PycharmProjects\Influnc+\venv\lib\site-packages\scrapy\core\downloader\middleware.py", line 49, in process_request
+    return (yield download_func(request=request, spider=spider))
+twisted.web._newclient.ResponseNeverReceived: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:38:15 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://bbs.31jmw.com/robots.txt> (failed 3 times): [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:38:15 [scrapy.downloadermiddlewares.robotstxt] ERROR: Error downloading <GET https://bbs.31jmw.com/robots.txt>: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+Traceback (most recent call last):
+  File "C:\Users\Miyuki\PycharmProjects\Influnc+\venv\lib\site-packages\scrapy\core\downloader\middleware.py", line 49, in process_request
+    return (yield download_func(request=request, spider=spider))
+twisted.web._newclient.ResponseNeverReceived: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:38:17 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://www.sstjtest.com/robots.txt> (failed 3 times): [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:38:17 [scrapy.downloadermiddlewares.robotstxt] ERROR: Error downloading <GET https://www.sstjtest.com/robots.txt>: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+Traceback (most recent call last):
+  File "C:\Users\Miyuki\PycharmProjects\Influnc+\venv\lib\site-packages\scrapy\core\downloader\middleware.py", line 49, in process_request
+    return (yield download_func(request=request, spider=spider))
+twisted.web._newclient.ResponseNeverReceived: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:38:18 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://share.eepw.com.cn/robots.txt> (failed 3 times): 503 Service Unavailable
+2022-07-08 23:38:19 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://www.rfidworld.com.cn/robots.txt> (failed 3 times): [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:38:19 [scrapy.downloadermiddlewares.robotstxt] ERROR: Error downloading <GET https://www.rfidworld.com.cn/robots.txt>: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+Traceback (most recent call last):
+  File "C:\Users\Miyuki\PycharmProjects\Influnc+\venv\lib\site-packages\scrapy\core\downloader\middleware.py", line 49, in process_request
+    return (yield download_func(request=request, spider=spider))
+twisted.web._newclient.ResponseNeverReceived: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:38:20 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://www.xbgk.com/robots.txt> (failed 3 times): [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:38:20 [scrapy.downloadermiddlewares.robotstxt] ERROR: Error downloading <GET https://www.xbgk.com/robots.txt>: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+Traceback (most recent call last):
+  File "C:\Users\Miyuki\PycharmProjects\Influnc+\venv\lib\site-packages\scrapy\core\downloader\middleware.py", line 49, in process_request
+    return (yield download_func(request=request, spider=spider))
+twisted.web._newclient.ResponseNeverReceived: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:38:24 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://www.tondea.com/robots.txt> (failed 3 times): [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:38:24 [scrapy.downloadermiddlewares.robotstxt] ERROR: Error downloading <GET https://www.tondea.com/robots.txt>: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+Traceback (most recent call last):
+  File "C:\Users\Miyuki\PycharmProjects\Influnc+\venv\lib\site-packages\scrapy\core\downloader\middleware.py", line 49, in process_request
+    return (yield download_func(request=request, spider=spider))
+twisted.web._newclient.ResponseNeverReceived: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:38:25 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://www.31tz.com/robots.txt> (failed 3 times): [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:38:25 [scrapy.downloadermiddlewares.robotstxt] ERROR: Error downloading <GET https://www.31tz.com/robots.txt>: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+Traceback (most recent call last):
+  File "C:\Users\Miyuki\PycharmProjects\Influnc+\venv\lib\site-packages\scrapy\core\downloader\middleware.py", line 49, in process_request
+    return (yield download_func(request=request, spider=spider))
+twisted.web._newclient.ResponseNeverReceived: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:38:27 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://china.machine365.com/robots.txt> (failed 3 times): [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:38:27 [scrapy.downloadermiddlewares.robotstxt] ERROR: Error downloading <GET https://china.machine365.com/robots.txt>: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+Traceback (most recent call last):
+  File "C:\Users\Miyuki\PycharmProjects\Influnc+\venv\lib\site-packages\scrapy\core\downloader\middleware.py", line 49, in process_request
+    return (yield download_func(request=request, spider=spider))
+twisted.web._newclient.ResponseNeverReceived: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:38:32 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://www.jhzlgs.com/robots.txt> (failed 3 times): [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:38:32 [scrapy.downloadermiddlewares.robotstxt] ERROR: Error downloading <GET https://www.jhzlgs.com/robots.txt>: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+Traceback (most recent call last):
+  File "C:\Users\Miyuki\PycharmProjects\Influnc+\venv\lib\site-packages\scrapy\core\downloader\middleware.py", line 49, in process_request
+    return (yield download_func(request=request, spider=spider))
+twisted.web._newclient.ResponseNeverReceived: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:38:32 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://www.medjobs.cn/robots.txt> (failed 3 times): [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:38:32 [scrapy.downloadermiddlewares.robotstxt] ERROR: Error downloading <GET https://www.medjobs.cn/robots.txt>: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+Traceback (most recent call last):
+  File "C:\Users\Miyuki\PycharmProjects\Influnc+\venv\lib\site-packages\scrapy\core\downloader\middleware.py", line 49, in process_request
+    return (yield download_func(request=request, spider=spider))
+twisted.web._newclient.ResponseNeverReceived: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:38:32 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://www.sdscci.org.cn/robots.txt> (failed 3 times): [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:38:32 [scrapy.downloadermiddlewares.robotstxt] ERROR: Error downloading <GET https://www.sdscci.org.cn/robots.txt>: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+Traceback (most recent call last):
+  File "C:\Users\Miyuki\PycharmProjects\Influnc+\venv\lib\site-packages\scrapy\core\downloader\middleware.py", line 49, in process_request
+    return (yield download_func(request=request, spider=spider))
+twisted.web._newclient.ResponseNeverReceived: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:38:32 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://www.yyjol.com/robots.txt> (failed 3 times): [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'wrong version number')]>]
+2022-07-08 23:38:32 [scrapy.downloadermiddlewares.robotstxt] ERROR: Error downloading <GET https://www.yyjol.com/robots.txt>: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'wrong version number')]>]
+Traceback (most recent call last):
+  File "C:\Users\Miyuki\PycharmProjects\Influnc+\venv\lib\site-packages\scrapy\core\downloader\middleware.py", line 49, in process_request
+    return (yield download_func(request=request, spider=spider))
+twisted.web._newclient.ResponseNeverReceived: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'wrong version number')]>]
+2022-07-08 23:38:33 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://www.biojob.cn/robots.txt> (failed 3 times): [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:38:33 [scrapy.downloadermiddlewares.robotstxt] ERROR: Error downloading <GET https://www.biojob.cn/robots.txt>: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+Traceback (most recent call last):
+  File "C:\Users\Miyuki\PycharmProjects\Influnc+\venv\lib\site-packages\scrapy\core\downloader\middleware.py", line 49, in process_request
+    return (yield download_func(request=request, spider=spider))
+twisted.web._newclient.ResponseNeverReceived: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:38:33 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://lieche.gaotie.cn/robots.txt> (failed 3 times): [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'length mismatch')]>]
+2022-07-08 23:38:33 [scrapy.downloadermiddlewares.robotstxt] ERROR: Error downloading <GET https://lieche.gaotie.cn/robots.txt>: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'length mismatch')]>]
+Traceback (most recent call last):
+  File "C:\Users\Miyuki\PycharmProjects\Influnc+\venv\lib\site-packages\scrapy\core\downloader\middleware.py", line 49, in process_request
+    return (yield download_func(request=request, spider=spider))
+twisted.web._newclient.ResponseNeverReceived: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'length mismatch')]>]
+2022-07-08 23:38:35 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://www.turenty.com/robots.txt> (failed 3 times): [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:38:35 [scrapy.downloadermiddlewares.robotstxt] ERROR: Error downloading <GET https://www.turenty.com/robots.txt>: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+Traceback (most recent call last):
+  File "C:\Users\Miyuki\PycharmProjects\Influnc+\venv\lib\site-packages\scrapy\core\downloader\middleware.py", line 49, in process_request
+    return (yield download_func(request=request, spider=spider))
+twisted.web._newclient.ResponseNeverReceived: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:38:39 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://www.sonhoo.com/robots.txt> (failed 3 times): [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:38:39 [scrapy.downloadermiddlewares.robotstxt] ERROR: Error downloading <GET https://www.sonhoo.com/robots.txt>: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+Traceback (most recent call last):
+  File "C:\Users\Miyuki\PycharmProjects\Influnc+\venv\lib\site-packages\scrapy\core\downloader\middleware.py", line 49, in process_request
+    return (yield download_func(request=request, spider=spider))
+twisted.web._newclient.ResponseNeverReceived: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:38:42 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://www.fairso.com/robots.txt> (failed 3 times): [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:38:42 [scrapy.downloadermiddlewares.robotstxt] ERROR: Error downloading <GET https://www.fairso.com/robots.txt>: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+Traceback (most recent call last):
+  File "C:\Users\Miyuki\PycharmProjects\Influnc+\venv\lib\site-packages\scrapy\core\downloader\middleware.py", line 49, in process_request
+    return (yield download_func(request=request, spider=spider))
+twisted.web._newclient.ResponseNeverReceived: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:38:42 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://www.qm571.com/robots.txt> (failed 3 times): [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:38:42 [scrapy.downloadermiddlewares.robotstxt] ERROR: Error downloading <GET https://www.qm571.com/robots.txt>: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+Traceback (most recent call last):
+  File "C:\Users\Miyuki\PycharmProjects\Influnc+\venv\lib\site-packages\scrapy\core\downloader\middleware.py", line 49, in process_request
+    return (yield download_func(request=request, spider=spider))
+twisted.web._newclient.ResponseNeverReceived: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:38:49 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://1000.job1001.com/robots.txt> (failed 3 times): [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:38:49 [scrapy.downloadermiddlewares.robotstxt] ERROR: Error downloading <GET https://1000.job1001.com/robots.txt>: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+Traceback (most recent call last):
+  File "C:\Users\Miyuki\PycharmProjects\Influnc+\venv\lib\site-packages\scrapy\core\downloader\middleware.py", line 49, in process_request
+    return (yield download_func(request=request, spider=spider))
+twisted.web._newclient.ResponseNeverReceived: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:38:52 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://shaoyang.myjob.com/robots.txt> (failed 3 times): [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:38:52 [scrapy.downloadermiddlewares.robotstxt] ERROR: Error downloading <GET https://shaoyang.myjob.com/robots.txt>: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+Traceback (most recent call last):
+  File "C:\Users\Miyuki\PycharmProjects\Influnc+\venv\lib\site-packages\scrapy\core\downloader\middleware.py", line 49, in process_request
+    return (yield download_func(request=request, spider=spider))
+twisted.web._newclient.ResponseNeverReceived: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:38:54 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://www.tuyaya.com/robots.txt> (failed 3 times): 503 Service Unavailable
+2022-07-08 23:38:54 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://dalian.qwjian.com/robots.txt> (failed 3 times): [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:38:54 [scrapy.downloadermiddlewares.robotstxt] ERROR: Error downloading <GET https://dalian.qwjian.com/robots.txt>: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+Traceback (most recent call last):
+  File "C:\Users\Miyuki\PycharmProjects\Influnc+\venv\lib\site-packages\scrapy\core\downloader\middleware.py", line 49, in process_request
+    return (yield download_func(request=request, spider=spider))
+twisted.web._newclient.ResponseNeverReceived: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:38:55 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://nanjing.myjob.com/robots.txt> (failed 3 times): [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:38:55 [scrapy.downloadermiddlewares.robotstxt] ERROR: Error downloading <GET https://nanjing.myjob.com/robots.txt>: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+Traceback (most recent call last):
+  File "C:\Users\Miyuki\PycharmProjects\Influnc+\venv\lib\site-packages\scrapy\core\downloader\middleware.py", line 49, in process_request
+    return (yield download_func(request=request, spider=spider))
+twisted.web._newclient.ResponseNeverReceived: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:38:58 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://mingyi.cn/robots.txt> (failed 3 times): [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:38:58 [scrapy.downloadermiddlewares.robotstxt] ERROR: Error downloading <GET https://mingyi.cn/robots.txt>: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+Traceback (most recent call last):
+  File "C:\Users\Miyuki\PycharmProjects\Influnc+\venv\lib\site-packages\scrapy\core\downloader\middleware.py", line 49, in process_request
+    return (yield download_func(request=request, spider=spider))
+twisted.web._newclient.ResponseNeverReceived: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:39:01 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://www.cpia.org.cn/robots.txt> (failed 3 times): [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:39:01 [scrapy.downloadermiddlewares.robotstxt] ERROR: Error downloading <GET https://www.cpia.org.cn/robots.txt>: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+Traceback (most recent call last):
+  File "C:\Users\Miyuki\PycharmProjects\Influnc+\venv\lib\site-packages\scrapy\core\downloader\middleware.py", line 49, in process_request
+    return (yield download_func(request=request, spider=spider))
+twisted.web._newclient.ResponseNeverReceived: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:39:02 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://www.kunwang.com/robots.txt> (failed 3 times): [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:39:02 [scrapy.downloadermiddlewares.robotstxt] ERROR: Error downloading <GET https://www.kunwang.com/robots.txt>: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+Traceback (most recent call last):
+  File "C:\Users\Miyuki\PycharmProjects\Influnc+\venv\lib\site-packages\scrapy\core\downloader\middleware.py", line 49, in process_request
+    return (yield download_func(request=request, spider=spider))
+twisted.web._newclient.ResponseNeverReceived: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:39:02 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://www.zdreport.com/robots.txt> (failed 3 times): [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:39:02 [scrapy.downloadermiddlewares.robotstxt] ERROR: Error downloading <GET https://www.zdreport.com/robots.txt>: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+Traceback (most recent call last):
+  File "C:\Users\Miyuki\PycharmProjects\Influnc+\venv\lib\site-packages\scrapy\core\downloader\middleware.py", line 49, in process_request
+    return (yield download_func(request=request, spider=spider))
+twisted.web._newclient.ResponseNeverReceived: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:39:05 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://www.cqap.cn/robots.txt> (failed 3 times): [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:39:05 [scrapy.downloadermiddlewares.robotstxt] ERROR: Error downloading <GET https://www.cqap.cn/robots.txt>: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+Traceback (most recent call last):
+  File "C:\Users\Miyuki\PycharmProjects\Influnc+\venv\lib\site-packages\scrapy\core\downloader\middleware.py", line 49, in process_request
+    return (yield download_func(request=request, spider=spider))
+twisted.web._newclient.ResponseNeverReceived: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:39:07 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://www.syjxzb.com/robots.txt> (failed 3 times): [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:39:07 [scrapy.downloadermiddlewares.robotstxt] ERROR: Error downloading <GET https://www.syjxzb.com/robots.txt>: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+Traceback (most recent call last):
+  File "C:\Users\Miyuki\PycharmProjects\Influnc+\venv\lib\site-packages\scrapy\core\downloader\middleware.py", line 49, in process_request
+    return (yield download_func(request=request, spider=spider))
+twisted.web._newclient.ResponseNeverReceived: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:39:10 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://rc.zj.com/robots.txt> (failed 3 times): [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:39:10 [scrapy.downloadermiddlewares.robotstxt] ERROR: Error downloading <GET https://rc.zj.com/robots.txt>: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+Traceback (most recent call last):
+  File "C:\Users\Miyuki\PycharmProjects\Influnc+\venv\lib\site-packages\scrapy\core\downloader\middleware.py", line 49, in process_request
+    return (yield download_func(request=request, spider=spider))
+twisted.web._newclient.ResponseNeverReceived: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:39:12 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://www.pharm.hc360.com/robots.txt> (failed 3 times): [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:39:12 [scrapy.downloadermiddlewares.robotstxt] ERROR: Error downloading <GET https://www.pharm.hc360.com/robots.txt>: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+Traceback (most recent call last):
+  File "C:\Users\Miyuki\PycharmProjects\Influnc+\venv\lib\site-packages\scrapy\core\downloader\middleware.py", line 49, in process_request
+    return (yield download_func(request=request, spider=spider))
+twisted.web._newclient.ResponseNeverReceived: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:39:16 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://www.51ey.com/robots.txt> (failed 3 times): [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:39:16 [scrapy.downloadermiddlewares.robotstxt] ERROR: Error downloading <GET https://www.51ey.com/robots.txt>: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+Traceback (most recent call last):
+  File "C:\Users\Miyuki\PycharmProjects\Influnc+\venv\lib\site-packages\scrapy\core\downloader\middleware.py", line 49, in process_request
+    return (yield download_func(request=request, spider=spider))
+twisted.web._newclient.ResponseNeverReceived: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:39:18 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://www.nbchem.com/robots.txt> (failed 3 times): [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:39:18 [scrapy.downloadermiddlewares.robotstxt] ERROR: Error downloading <GET https://www.nbchem.com/robots.txt>: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+Traceback (most recent call last):
+  File "C:\Users\Miyuki\PycharmProjects\Influnc+\venv\lib\site-packages\scrapy\core\downloader\middleware.py", line 49, in process_request
+    return (yield download_func(request=request, spider=spider))
+twisted.web._newclient.ResponseNeverReceived: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:39:22 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://www.dahangzhou.com/robots.txt> (failed 3 times): [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:39:22 [scrapy.downloadermiddlewares.robotstxt] ERROR: Error downloading <GET https://www.dahangzhou.com/robots.txt>: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+Traceback (most recent call last):
+  File "C:\Users\Miyuki\PycharmProjects\Influnc+\venv\lib\site-packages\scrapy\core\downloader\middleware.py", line 49, in process_request
+    return (yield download_func(request=request, spider=spider))
+twisted.web._newclient.ResponseNeverReceived: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:39:22 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://www.1m1m.com/robots.txt> (failed 3 times): [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:39:22 [scrapy.downloadermiddlewares.robotstxt] ERROR: Error downloading <GET https://www.1m1m.com/robots.txt>: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+Traceback (most recent call last):
+  File "C:\Users\Miyuki\PycharmProjects\Influnc+\venv\lib\site-packages\scrapy\core\downloader\middleware.py", line 49, in process_request
+    return (yield download_func(request=request, spider=spider))
+twisted.web._newclient.ResponseNeverReceived: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:39:22 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://www.100md.com/robots.txt> (failed 3 times): [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:39:22 [scrapy.downloadermiddlewares.robotstxt] ERROR: Error downloading <GET https://www.100md.com/robots.txt>: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+Traceback (most recent call last):
+  File "C:\Users\Miyuki\PycharmProjects\Influnc+\venv\lib\site-packages\scrapy\core\downloader\middleware.py", line 49, in process_request
+    return (yield download_func(request=request, spider=spider))
+twisted.web._newclient.ResponseNeverReceived: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:39:25 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://hangzhou.fangtoo.com/robots.txt> (failed 3 times): [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:39:25 [scrapy.downloadermiddlewares.robotstxt] ERROR: Error downloading <GET https://hangzhou.fangtoo.com/robots.txt>: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+Traceback (most recent call last):
+  File "C:\Users\Miyuki\PycharmProjects\Influnc+\venv\lib\site-packages\scrapy\core\downloader\middleware.py", line 49, in process_request
+    return (yield download_func(request=request, spider=spider))
+twisted.web._newclient.ResponseNeverReceived: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:39:25 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://www.vsharing.com/robots.txt> (failed 3 times): [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:39:25 [scrapy.downloadermiddlewares.robotstxt] ERROR: Error downloading <GET https://www.vsharing.com/robots.txt>: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+Traceback (most recent call last):
+  File "C:\Users\Miyuki\PycharmProjects\Influnc+\venv\lib\site-packages\scrapy\core\downloader\middleware.py", line 49, in process_request
+    return (yield download_func(request=request, spider=spider))
+twisted.web._newclient.ResponseNeverReceived: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:39:26 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://blog.116.com.cn/robots.txt> (failed 3 times): [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unsafe legacy renegotiation disabled')]>]
+2022-07-08 23:39:26 [scrapy.downloadermiddlewares.robotstxt] ERROR: Error downloading <GET https://blog.116.com.cn/robots.txt>: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unsafe legacy renegotiation disabled')]>]
+Traceback (most recent call last):
+  File "C:\Users\Miyuki\PycharmProjects\Influnc+\venv\lib\site-packages\scrapy\core\downloader\middleware.py", line 49, in process_request
+    return (yield download_func(request=request, spider=spider))
+twisted.web._newclient.ResponseNeverReceived: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unsafe legacy renegotiation disabled')]>]
+2022-07-08 23:39:27 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://www.qu114.com/robots.txt> (failed 3 times): [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:39:27 [scrapy.downloadermiddlewares.robotstxt] ERROR: Error downloading <GET https://www.qu114.com/robots.txt>: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+Traceback (most recent call last):
+  File "C:\Users\Miyuki\PycharmProjects\Influnc+\venv\lib\site-packages\scrapy\core\downloader\middleware.py", line 49, in process_request
+    return (yield download_func(request=request, spider=spider))
+twisted.web._newclient.ResponseNeverReceived: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:39:33 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://www.bj.cyberpolice.cn/robots.txt> (failed 3 times): [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:39:33 [scrapy.downloadermiddlewares.robotstxt] ERROR: Error downloading <GET https://www.bj.cyberpolice.cn/robots.txt>: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+Traceback (most recent call last):
+  File "C:\Users\Miyuki\PycharmProjects\Influnc+\venv\lib\site-packages\scrapy\core\downloader\middleware.py", line 49, in process_request
+    return (yield download_func(request=request, spider=spider))
+twisted.web._newclient.ResponseNeverReceived: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:39:34 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://www.1000thinktank.com/robots.txt> (failed 3 times): [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'sslv3 alert handshake failure')]>]
+2022-07-08 23:39:34 [scrapy.downloadermiddlewares.robotstxt] ERROR: Error downloading <GET https://www.1000thinktank.com/robots.txt>: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'sslv3 alert handshake failure')]>]
+Traceback (most recent call last):
+  File "C:\Users\Miyuki\PycharmProjects\Influnc+\venv\lib\site-packages\scrapy\core\downloader\middleware.py", line 49, in process_request
+    return (yield download_func(request=request, spider=spider))
+twisted.web._newclient.ResponseNeverReceived: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'sslv3 alert handshake failure')]>]
+2022-07-08 23:39:34 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://www.gongkong.com/robots.txt> (failed 3 times): [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:39:34 [scrapy.downloadermiddlewares.robotstxt] ERROR: Error downloading <GET https://www.gongkong.com/robots.txt>: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+Traceback (most recent call last):
+  File "C:\Users\Miyuki\PycharmProjects\Influnc+\venv\lib\site-packages\scrapy\core\downloader\middleware.py", line 49, in process_request
+    return (yield download_func(request=request, spider=spider))
+twisted.web._newclient.ResponseNeverReceived: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:39:36 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://sina.kangq.com/robots.txt> (failed 3 times): [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:39:36 [scrapy.downloadermiddlewares.robotstxt] ERROR: Error downloading <GET https://sina.kangq.com/robots.txt>: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+Traceback (most recent call last):
+  File "C:\Users\Miyuki\PycharmProjects\Influnc+\venv\lib\site-packages\scrapy\core\downloader\middleware.py", line 49, in process_request
+    return (yield download_func(request=request, spider=spider))
+twisted.web._newclient.ResponseNeverReceived: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:39:38 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://www.bjjubao.org/robots.txt> (failed 3 times): [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:39:38 [scrapy.downloadermiddlewares.robotstxt] ERROR: Error downloading <GET https://www.bjjubao.org/robots.txt>: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+Traceback (most recent call last):
+  File "C:\Users\Miyuki\PycharmProjects\Influnc+\venv\lib\site-packages\scrapy\core\downloader\middleware.py", line 49, in process_request
+    return (yield download_func(request=request, spider=spider))
+twisted.web._newclient.ResponseNeverReceived: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:39:38 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://www.rctong.com/robots.txt> (failed 3 times): [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:39:38 [scrapy.downloadermiddlewares.robotstxt] ERROR: Error downloading <GET https://www.rctong.com/robots.txt>: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+Traceback (most recent call last):
+  File "C:\Users\Miyuki\PycharmProjects\Influnc+\venv\lib\site-packages\scrapy\core\downloader\middleware.py", line 49, in process_request
+    return (yield download_func(request=request, spider=spider))
+twisted.web._newclient.ResponseNeverReceived: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:39:41 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://www.qnr.cn/robots.txt> (failed 3 times): [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:39:41 [scrapy.downloadermiddlewares.robotstxt] ERROR: Error downloading <GET https://www.qnr.cn/robots.txt>: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+Traceback (most recent call last):
+  File "C:\Users\Miyuki\PycharmProjects\Influnc+\venv\lib\site-packages\scrapy\core\downloader\middleware.py", line 49, in process_request
+    return (yield download_func(request=request, spider=spider))
+twisted.web._newclient.ResponseNeverReceived: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:39:41 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://www.hxdsrc.com/robots.txt> (failed 3 times): [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:39:41 [scrapy.downloadermiddlewares.robotstxt] ERROR: Error downloading <GET https://www.hxdsrc.com/robots.txt>: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+Traceback (most recent call last):
+  File "C:\Users\Miyuki\PycharmProjects\Influnc+\venv\lib\site-packages\scrapy\core\downloader\middleware.py", line 49, in process_request
+    return (yield download_func(request=request, spider=spider))
+twisted.web._newclient.ResponseNeverReceived: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:39:43 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://www.ddahr.net/robots.txt> (failed 3 times): [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:39:43 [scrapy.downloadermiddlewares.robotstxt] ERROR: Error downloading <GET https://www.ddahr.net/robots.txt>: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+Traceback (most recent call last):
+  File "C:\Users\Miyuki\PycharmProjects\Influnc+\venv\lib\site-packages\scrapy\core\downloader\middleware.py", line 49, in process_request
+    return (yield download_func(request=request, spider=spider))
+twisted.web._newclient.ResponseNeverReceived: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:39:43 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://www.haobest.com/robots.txt> (failed 3 times): [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:39:43 [scrapy.downloadermiddlewares.robotstxt] ERROR: Error downloading <GET https://www.haobest.com/robots.txt>: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+Traceback (most recent call last):
+  File "C:\Users\Miyuki\PycharmProjects\Influnc+\venv\lib\site-packages\scrapy\core\downloader\middleware.py", line 49, in process_request
+    return (yield download_func(request=request, spider=spider))
+twisted.web._newclient.ResponseNeverReceived: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:39:46 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://www.yynet.cn/robots.txt> (failed 3 times): [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:39:46 [scrapy.downloadermiddlewares.robotstxt] ERROR: Error downloading <GET https://www.yynet.cn/robots.txt>: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+Traceback (most recent call last):
+  File "C:\Users\Miyuki\PycharmProjects\Influnc+\venv\lib\site-packages\scrapy\core\downloader\middleware.py", line 49, in process_request
+    return (yield download_func(request=request, spider=spider))
+twisted.web._newclient.ResponseNeverReceived: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:39:47 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://yj.93zp.com/robots.txt> (failed 3 times): [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:39:47 [scrapy.downloadermiddlewares.robotstxt] ERROR: Error downloading <GET https://yj.93zp.com/robots.txt>: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+Traceback (most recent call last):
+  File "C:\Users\Miyuki\PycharmProjects\Influnc+\venv\lib\site-packages\scrapy\core\downloader\middleware.py", line 49, in process_request
+    return (yield download_func(request=request, spider=spider))
+twisted.web._newclient.ResponseNeverReceived: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:39:48 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://zj.93zp.com/robots.txt> (failed 3 times): [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:39:48 [scrapy.downloadermiddlewares.robotstxt] ERROR: Error downloading <GET https://zj.93zp.com/robots.txt>: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+Traceback (most recent call last):
+  File "C:\Users\Miyuki\PycharmProjects\Influnc+\venv\lib\site-packages\scrapy\core\downloader\middleware.py", line 49, in process_request
+    return (yield download_func(request=request, spider=spider))
+twisted.web._newclient.ResponseNeverReceived: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:39:50 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://www.huadongkaoyan.com/robots.txt> (failed 3 times): [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:39:50 [scrapy.downloadermiddlewares.robotstxt] ERROR: Error downloading <GET https://www.huadongkaoyan.com/robots.txt>: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+Traceback (most recent call last):
+  File "C:\Users\Miyuki\PycharmProjects\Influnc+\venv\lib\site-packages\scrapy\core\downloader\middleware.py", line 49, in process_request
+    return (yield download_func(request=request, spider=spider))
+twisted.web._newclient.ResponseNeverReceived: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:39:51 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://www.shoudurc.com/robots.txt> (failed 3 times): [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:39:51 [scrapy.downloadermiddlewares.robotstxt] ERROR: Error downloading <GET https://www.shoudurc.com/robots.txt>: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+Traceback (most recent call last):
+  File "C:\Users\Miyuki\PycharmProjects\Influnc+\venv\lib\site-packages\scrapy\core\downloader\middleware.py", line 49, in process_request
+    return (yield download_func(request=request, spider=spider))
+twisted.web._newclient.ResponseNeverReceived: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:39:56 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://www.shangdakaoyan.com/robots.txt> (failed 3 times): [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:39:56 [scrapy.downloadermiddlewares.robotstxt] ERROR: Error downloading <GET https://www.shangdakaoyan.com/robots.txt>: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+Traceback (most recent call last):
+  File "C:\Users\Miyuki\PycharmProjects\Influnc+\venv\lib\site-packages\scrapy\core\downloader\middleware.py", line 49, in process_request
+    return (yield download_func(request=request, spider=spider))
+twisted.web._newclient.ResponseNeverReceived: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:39:57 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://www.fantong.com/robots.txt> (failed 3 times): [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:39:57 [scrapy.downloadermiddlewares.robotstxt] ERROR: Error downloading <GET https://www.fantong.com/robots.txt>: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+Traceback (most recent call last):
+  File "C:\Users\Miyuki\PycharmProjects\Influnc+\venv\lib\site-packages\scrapy\core\downloader\middleware.py", line 49, in process_request
+    return (yield download_func(request=request, spider=spider))
+twisted.web._newclient.ResponseNeverReceived: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:40:00 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://tiandaoedu.com/robots.txt> (failed 3 times): [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:40:00 [scrapy.downloadermiddlewares.robotstxt] ERROR: Error downloading <GET https://tiandaoedu.com/robots.txt>: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+Traceback (most recent call last):
+  File "C:\Users\Miyuki\PycharmProjects\Influnc+\venv\lib\site-packages\scrapy\core\downloader\middleware.py", line 49, in process_request
+    return (yield download_func(request=request, spider=spider))
+twisted.web._newclient.ResponseNeverReceived: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:40:04 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://www.caihao.com/robots.txt> (failed 3 times): [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:40:04 [scrapy.downloadermiddlewares.robotstxt] ERROR: Error downloading <GET https://www.caihao.com/robots.txt>: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+Traceback (most recent call last):
+  File "C:\Users\Miyuki\PycharmProjects\Influnc+\venv\lib\site-packages\scrapy\core\downloader\middleware.py", line 49, in process_request
+    return (yield download_func(request=request, spider=spider))
+twisted.web._newclient.ResponseNeverReceived: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:40:05 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://www.hzpeisen.com/robots.txt> (failed 3 times): [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:40:05 [scrapy.downloadermiddlewares.robotstxt] ERROR: Error downloading <GET https://www.hzpeisen.com/robots.txt>: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+Traceback (most recent call last):
+  File "C:\Users\Miyuki\PycharmProjects\Influnc+\venv\lib\site-packages\scrapy\core\downloader\middleware.py", line 49, in process_request
+    return (yield download_func(request=request, spider=spider))
+twisted.web._newclient.ResponseNeverReceived: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:40:08 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://www.dlxp.com/robots.txt> (failed 3 times): [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:40:08 [scrapy.downloadermiddlewares.robotstxt] ERROR: Error downloading <GET https://www.dlxp.com/robots.txt>: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+Traceback (most recent call last):
+  File "C:\Users\Miyuki\PycharmProjects\Influnc+\venv\lib\site-packages\scrapy\core\downloader\middleware.py", line 49, in process_request
+    return (yield download_func(request=request, spider=spider))
+twisted.web._newclient.ResponseNeverReceived: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:40:09 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://www.cnbm.net.cn/robots.txt> (failed 3 times): 502 Bad Gateway
+2022-07-08 23:40:14 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://www.gzrencai.com/robots.txt> (failed 3 times): 522 Unknown Status
+2022-07-08 23:40:15 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://www.gzrc.gov.cn/robots.txt> (failed 3 times): [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:40:15 [scrapy.downloadermiddlewares.robotstxt] ERROR: Error downloading <GET https://www.gzrc.gov.cn/robots.txt>: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+Traceback (most recent call last):
+  File "C:\Users\Miyuki\PycharmProjects\Influnc+\venv\lib\site-packages\scrapy\core\downloader\middleware.py", line 49, in process_request
+    return (yield download_func(request=request, spider=spider))
+twisted.web._newclient.ResponseNeverReceived: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:40:18 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://www.100zp.com/robots.txt> (failed 3 times): [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+2022-07-08 23:40:18 [scrapy.downloadermiddlewares.robotstxt] ERROR: Error downloading <GET https://www.100zp.com/robots.txt>: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
+Traceback (most recent call last):
+  File "C:\Users\Miyuki\PycharmProjects\Influnc+\venv\lib\site-packages\scrapy\core\downloader\middleware.py", line 49, in process_request
+    return (yield download_func(request=request, spider=spider))
+twisted.web._newclient.ResponseNeverReceived: [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', '', 'unexpected eof while reading')]>]
