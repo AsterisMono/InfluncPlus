@@ -28,9 +28,10 @@ class FilterPipeline:
     def process_item(self, item, spider):
         if_updated = self.tester.update()
         if if_updated:
-            spider.logger.info("[过滤器] 过滤器黑名单已经改变，正在更新...")
+            spider.console_logger.info("[过滤器] 过滤器黑名单已经改变，正在更新...")
         flag, keyword = self.tester.test(item["title"])
         if flag:
+            spider.console_logger.info("[{}] 发现关键词: ----> [{}] <----, 条目已丢弃".format(item["title"], keyword))
             raise DropItem("[{}] 发现关键词:{}, 条目已丢弃".format(item["title"], keyword))
         return item
 
