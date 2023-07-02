@@ -15,6 +15,7 @@ class Blog(BaseModel):
     title = CharField(null=True)
     status = CharField(null=True)  # online-links, online-no-links, offline or unknown
     last_access_time = DateTimeField(null=True)
+    rss_json = CharField(null=True)
 
 
 class Link(BaseModel):

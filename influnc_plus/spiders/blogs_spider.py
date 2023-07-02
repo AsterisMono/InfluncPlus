@@ -1,14 +1,18 @@
 import logging
+from typing import Tuple
+from bs4 import BeautifulSoup as soup
 from datetime import datetime
 from urllib.parse import urlparse
 
 import scrapy
 from scrapy.linkextractors import LinkExtractor
 
+import json
+
 from influnc_plus.db.models import Blog
 from influnc_plus.filter.keyword_tester import get_tester
 from influnc_plus.items import BlogLinkItem
-from influnc_plus.util.utils import str_collapse
+from influnc_plus.util.utils import findRssXmls, getXmlTagParser, str_collapse
 
 
 def if_path_contains_keyword(path, keywords: list[str]) -> bool:
@@ -101,7 +105,7 @@ class BlogsSpider(scrapy.Spider):
         src_blog.save()
         self.console_logger.info("[{}] 不可达，已放弃连接".format(src_blog.title))
 
-    def get_page_title(self, response) -> (str, str):
+    def get_page_title(self, response) -> Tuple[str, str]:
         # Fallback path: og:site_name -> og:title -> HTML title
         og_site_name = response.xpath('//meta[@property="og:site_name"]/@content')
         if len(og_site_name) == 1:
@@ -115,19 +119,34 @@ class BlogsSpider(scrapy.Spider):
         src_blog = kwargs['src']
         m_title = self.get_page_title(response)
         src_blog.title = m_title[0]
-        src_blog.save()
 
-        # Test page title now
-        flag, keyword = self.tester.test(src_blog.title)
-        if flag:
-            self.console_logger.info("[{}] 发现关键词: ----> [{}] <----, 条目已在[抓取后]丢弃".format(src_blog.title, keyword))
-            src_blog.status = "dropped"
-            src_blog.save()
-            return
+        # 尝试获取RSS，这个属性拥有最高的优先级
+        potential_rss_tags = findRssXmls(response)
+        if len(potential_rss_tags) != 0:
+            # data structure: tuple(title, link)
+            parseXmlTag = getXmlTagParser(src_blog.title)
+            rss_items = list(map(parseXmlTag, potential_rss_tags))
+            rss_db_json = json.dumps(rss_items, ensure_ascii=False).encode('utf-8')
+            src_blog.rss_json = rss_db_json
+            self.console_logger.info("[{}] 已抓取 {} 条 RSS 信息".format(src_blog.title, len(potential_rss_tags)))
+        else:
+            # If no feed is found, test page title now
+            self.console_logger.info("[{}] 没有获取到 RSS 信息".format(src_blog.title))
+            flag, keyword = self.tester.test(src_blog.title)
+            if flag:
+                self.console_logger.info("[{}] 发现关键词: ----> [{}] <----, 条目已在[抓取后]丢弃".format(src_blog.title, keyword))
+                src_blog.status = "dropped"
+                src_blog.save()
+                return
+
+        # Save new title and rss data
+        src_blog.save()
 
         self.console_logger.info("[{}] 正在进入: {}, 标题来源: {}".format(src_blog.title, src_blog.domain, m_title[1]))
         insite_link_extractor = LinkExtractor(allow_domains=[urlparse(response.url).netloc], unique=True)
         has_friend_page = False
+
+        # 获取友链页面
         for link in insite_link_extractor.extract_links(response):
             if if_link_points_to_friend_page(link):
                 self.console_logger.info("[{}] 发现了疑似友链页面:{}".format(src_blog.title, link.url))
