@@ -100,7 +100,7 @@ class BlogsSpider(scrapy.Spider):
             blog.status = "pending"
             blog.save()
             url = "https://" + blog.domain
-            self.console_logger.info("Yielded item: {}".format(url))
+            self.console_logger.info("读取条目: {}".format(url))
             yield scrapy.Request(url, callback=self.parse_blog, errback=self.error_handling, cb_kwargs={'src': blog})
 
     def error_handling(self, failure):
@@ -188,15 +188,18 @@ class BlogsSpider(scrapy.Spider):
 
     def parse_friend_page(self, response, **kwargs):
         src_blog = kwargs['src']
+        friend_count = 0
         self.console_logger.info("[{}] 正在解析友链页面".format(src_blog.title))
         ext_link_extractor = LinkExtractor(deny_domains=self.denied_domains + [urlparse(response.url).netloc]
                                            , unique=True)
         for link in ext_link_extractor.extract_links(response):
             url = urlparse(link.url)
             if url.path == "":
+                friend_count += 1
                 yield BlogLinkItem(url=url, title=link.text, src_blog=src_blog)
+        self.console_logger.info("[{}] 解析了 {} 条友链".format(src_blog.title, friend_count))
 
     def closed(self, reason):
-        query = Blog.update(status="unknown").where(Blog.status == "pending")
-        self.console_logger.info("Spider exiting, treating all pending requests as unknown")
+        query = Blog.update(status = "offline").where(Blog.status == "pending")
+        self.console_logger.info("正在退出，将所有 pending 条目视为 offline")
         query.execute()
